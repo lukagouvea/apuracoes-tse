@@ -1,0 +1,63 @@
+{
+  "2006": {
+    "reference": {
+      "year": 2006,
+      "turn": 1
+    },
+    "candidate_a": "13",
+    "candidate_b": "45",
+    "name_a": "Luiz Inácio Lula da Silva",
+    "name_b": "Geraldo Alckmin"
+  },
+  "2010": {
+    "reference": {
+      "year": 2010,
+      "turn": 1
+    },
+    "candidate_a": "13",
+    "candidate_b": "45",
+    "name_a": "Dilma Rousseff",
+    "name_b": "José Serra"
+  },
+  "2014": {
+    "reference": {
+      "year": 2014,
+      "turn": 1
+    },
+    "candidate_a": "13",
+    "candidate_b": "45",
+    "name_a": "Dilma Rousseff",
+    "name_b": "Aécio Neves"
+  },
+  "2018": {
+    "reference": {
+      "year": 2018,
+      "turn": 1
+    },
+    "candidate_a": "13",
+    "candidate_b": "17",
+    "name_a": "Fernando Haddad",
+    "name_b": "Jair Bolsonaro"
+  },
+  "2022": {
+    "reference": {
+      "year": 2022,
+      "turn": 1
+    },
+    "candidate_a": "13",
+    "candidate_b": "22",
+    "name_a": "Luiz Inácio Lula da Silva",
+    "name_b": "Jair Bolsonaro"
+  },
+  "2026": {
+    "reference": {
+      "year": 2026,
+      "turn": 1
+    },
+    "candidate_a": "13",
+    "candidate_b": "22",
+    "note": "Correspondência confirmada nos registros oficiais de segundo turno baixados; A = PT, B = outro finalista.",
+    "name_a": "Luiz Inácio Lula da Silva",
+    "name_b": "Flávio Nantes Bolsonaro"
+  }
+}

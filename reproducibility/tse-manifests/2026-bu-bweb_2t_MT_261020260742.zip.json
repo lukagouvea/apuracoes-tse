@@ -1,0 +1,15 @@
+{
+  "year": 2026,
+  "kind": "bu",
+  "url": "https://cdn.tse.jus.br/estatistica/sead/eleicoes/eleicoes2026/buweb/bweb_2t_MT_261020260742.zip",
+  "resource_name": "MT - Boletim de Urna - Segundo turno - 26.10.2026",
+  "resource_id": "4fc6a94d-94c8-4d03-91ff-72aefb954d33",
+  "path": "raw/2026/bu/bweb_2t_MT_261020260742.zip",
+  "status": "complete",
+  "retrieved_at": "2026-11-07T02:33:10.930566+00:00",
+  "expected_bytes": 2204666,
+  "etag": "\"21a3fa-65ebd1589cc0b\"",
+  "last_modified": "Mon, 26 Oct 2026 12:01:03 GMT",
+  "bytes": 2204666,
+  "sha256": "5303d588838ed3b40499f86b0758237da1eb1b594449550f753fdecb152bd569"
+}

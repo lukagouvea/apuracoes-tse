@@ -1,0 +1,64 @@
+{
+  "study": {
+    "version": 3,
+    "evaluation_years": [
+      2018,
+      2022,
+      2026
+    ],
+    "office": "Presidente",
+    "turn": 2,
+    "progress_unit": "sections_in_dataset",
+    "smoke_milestones": [
+      0.01,
+      0.02,
+      0.05,
+      0.1,
+      1.0
+    ],
+    "convergence_thresholds_pp": [
+      1.0,
+      0.5,
+      0.25
+    ],
+    "recommended_experiment_grid_step": 0.01,
+    "reference_policy": "same_year_first_round",
+    "reference_turn": 1,
+    "reference_preference": "A1 / (A1 + B1)",
+    "reference_volume": "all_first_round_valid_votes",
+    "archive_policy": "Keep earlier datasets and runs; they are not evaluation elections."
+  },
+  "source_runs": {
+    "2018": {
+      "reports/cpu-study-20261107/grid-2018/run.json": "cb7fc03afd8420bf3e0f36caf147bafa9ab816c23697f0e93c924bd1e040f69a",
+      "reports/cpu-study-20261107/grid-2018/projections.parquet": "bc622570fbd893c26ba7b46a0fde3b015aa16d6bcd2eb8389b375923e79c05fa"
+    },
+    "2022": {
+      "reports/cpu-study-20261107/grid-2022/run.json": "2f47ef52bcbb0b0c4f65d3cf4044b30802409a9c574f044d16fb969d21efd7e7",
+      "reports/cpu-study-20261107/grid-2022/projections.parquet": "4308d3b612c1f5d6354ec815776ad0e5873b5ab929c23eaaac8c216d3bc0a1fa"
+    },
+    "2026": {
+      "reports/cpu-study-20261107/grid-2026/run.json": "47d68f1ddbea1fc0f369ad46785f4ff76a368d701a0574f5a9b2c0020ce1c3a6",
+      "reports/cpu-study-20261107/grid-2026/projections.parquet": "3b51af4f2df5f005e8c3c6d95707121faae915f0aaaad8d303efbfc2db2b7e9e"
+    }
+  },
+  "source_code": {
+    "/workspace/scripts/build_convergencia.py": "b3f1a9ff090a9930b1e74f5ef4d6e135e195d7bc72775538d2637de3d32c220c",
+    "templates/convergencia.html": "fb6213ec64bdc891f5faba3e98ce01758fa5469e09c288fb5ffece7d07f9491f",
+    "src/projecao/results.py": "a446b4ff5d3d7fd43f6f954448803ccfdee71744ae5a2793d76e1ea8d8b1dd20",
+    "src/projecao/models.py": "184cd9b0a369f04ef31559bfb0e5aeb098f0342486304b797e20e87996128b20",
+    "src/projecao/study.py": "47739f6eed45fd12af2bcb1385246d7a4ded9841ad54e60c10939aa8d01e3c90",
+    "configs/study.json": "630c1554865433d5002c3fbbe51fe5d399e82b1b504a25de92d980e1c68400bc"
+  },
+  "artifacts": {
+    "reports/convergencia.html": "665b755791f391a0befa4d0464a0453e440f9c5b806c01984d00c47de7514b25",
+    "reports/convergencia/series.json": "e5674de671fa093b23c5b717e1d80f69fb750f448ef2647d6906fe8d47bc1fd7",
+    "reports/convergencia/marcos.csv": "4a328e9f86fe977767986351ba1fcaae6f78b2230e0e7b16892320e7c2f5c567",
+    "reports/convergencia/marcos.parquet": "1f32ed1842c5c43f53e37cb7274eba77fe245bc1c8bc0af84cb9ca4e2acc1045",
+    "reports/convergencia/trajetorias.png": "0ba19435ca06e10dd81704e8f631f6dfa6a4a64d48e43705f96c0cf2433250a4",
+    "reports/convergencia/trajetorias.svg": "09420ccd3e18dc3af6a4737409aa43d60ef28092bc218052d307cf3f3afba10e"
+  },
+  "table_rows": 36,
+  "model_projections": 927,
+  "recomputed_estimators": false
+}

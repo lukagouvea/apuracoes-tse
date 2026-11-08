@@ -1,0 +1,15 @@
+{
+  "year": 2026,
+  "kind": "bu",
+  "url": "https://cdn.tse.jus.br/estatistica/sead/eleicoes/eleicoes2026/buweb/bweb_2t_MG_261020260742.zip",
+  "resource_name": "MG - Boletim de Urna - Segundo turno - 26.10.2026",
+  "resource_id": "6c3e6458-fe4d-4af2-bef7-dc5861c2e525",
+  "path": "raw/2026/bu/bweb_2t_MG_261020260742.zip",
+  "status": "complete",
+  "retrieved_at": "2026-11-07T02:33:10.092293+00:00",
+  "expected_bytes": 14071007,
+  "etag": "\"d6b4df-65ebd14b1eb0d\"",
+  "last_modified": "Mon, 26 Oct 2026 12:00:49 GMT",
+  "bytes": 14071007,
+  "sha256": "56a96873e0c03508d0a58060a09ef8f8660aa80e8fd36289fd3b25c1c71b7839"
+}

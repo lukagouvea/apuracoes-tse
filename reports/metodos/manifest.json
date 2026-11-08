@@ -1,0 +1,48 @@
+{
+  "synthetic": true,
+  "states": {
+    "poststrat": 231,
+    "swing": 21,
+    "hierarchical": 606
+  },
+  "html_sha256": "9165555c6fe4ddfde35032fd684566ee29e1bae46c1494d3f1d80b904777e3cf",
+  "examples_sha256": "f93115e8b16f40114adbf425c5893ed44b5030455d32c1313bac203a87f63fda",
+  "source_sha256": {
+    "templates/metodos.html": "b0f268749e220bf60587728105f8b359e41a0dc8f11786470154c9a76f992693",
+    "scripts/build_metodos.py": "d922f91b37c6ed9ff60341b880271e2ce7eceebce670f4b13edc8a6e97e4296f",
+    "src/projecao/didactic.py": "2f1649ceffc90016b490a98b65e2ecce839fa253fddf5ca4d1d5c0c265bcc4da",
+    "src/projecao/models.py": "184cd9b0a369f04ef31559bfb0e5aeb098f0342486304b797e20e87996128b20",
+    "src/projecao/study.py": "47739f6eed45fd12af2bcb1385246d7a4ded9841ad54e60c10939aa8d01e3c90",
+    "configs/study.json": "630c1554865433d5002c3fbbe51fe5d399e82b1b504a25de92d980e1c68400bc"
+  },
+  "torch": "2.12.0.dev20260407+cu128",
+  "study": {
+    "version": 3,
+    "evaluation_years": [
+      2018,
+      2022,
+      2026
+    ],
+    "office": "Presidente",
+    "turn": 2,
+    "progress_unit": "sections_in_dataset",
+    "smoke_milestones": [
+      0.01,
+      0.02,
+      0.05,
+      0.1,
+      1.0
+    ],
+    "convergence_thresholds_pp": [
+      1.0,
+      0.5,
+      0.25
+    ],
+    "recommended_experiment_grid_step": 0.01,
+    "reference_policy": "same_year_first_round",
+    "reference_turn": 1,
+    "reference_preference": "A1 / (A1 + B1)",
+    "reference_volume": "all_first_round_valid_votes",
+    "archive_policy": "Keep earlier datasets and runs; they are not evaluation elections."
+  }
+}

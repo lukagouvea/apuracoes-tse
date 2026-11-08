@@ -1,0 +1,353 @@
+{
+  "years": [
+    2022,
+    2026
+  ],
+  "truth_lula_pct": {
+    "2022": 50.90240511717216,
+    "2026": 51.7851828842626
+  },
+  "data_quality": {
+    "2022": {
+      "records": 71,
+      "distinct_percentages": 56,
+      "most_repeated_timestamp": [
+        "30/10/2022 16:36:00",
+        1
+      ],
+      "source_type": "author_published_backtest_by_section",
+      "live_chronology_verified": false
+    },
+    "2026": {
+      "records": 375,
+      "distinct_percentages": 276,
+      "most_repeated_timestamp": [
+        "26/10/2026 09:05:23",
+        371
+      ],
+      "source_type": "current_public_api_series",
+      "live_chronology_verified": false
+    }
+  },
+  "milestones": [
+    {
+      "year": 2022,
+      "nominal_mark_pct": 1,
+      "mattecca_progress_pct": 1.62,
+      "our_progress_pct": 1.6295643478776682,
+      "mattecca_estimate_pct": 50.94,
+      "final_lula_pct": 50.90240511717216,
+      "mattecca_error_pp": 0.037594882827839626,
+      "poststrat_error_pp": 1.9909164928377243,
+      "swing_error_pp": 0.2866055678006574,
+      "hierarchical_error_pp": 0.5249595824118103
+    },
+    {
+      "year": 2022,
+      "nominal_mark_pct": 2,
+      "mattecca_progress_pct": 3.26,
+      "our_progress_pct": 3.264636843577076,
+      "mattecca_estimate_pct": 51.07,
+      "final_lula_pct": 50.90240511717216,
+      "mattecca_error_pp": 0.16759488282784218,
+      "poststrat_error_pp": 0.12235781719492911,
+      "swing_error_pp": 0.1329634754886011,
+      "hierarchical_error_pp": 0.2520015626034433
+    },
+    {
+      "year": 2022,
+      "nominal_mark_pct": 5,
+      "mattecca_progress_pct": 5.71,
+      "our_progress_pct": 5.711313735625852,
+      "mattecca_estimate_pct": 51.08,
+      "final_lula_pct": 50.90240511717216,
+      "mattecca_error_pp": 0.1775948828278402,
+      "poststrat_error_pp": 0.09493282725088203,
+      "swing_error_pp": 0.10769212464361022,
+      "hierarchical_error_pp": 0.14432323246903467
+    },
+    {
+      "year": 2022,
+      "nominal_mark_pct": 10,
+      "mattecca_progress_pct": 11.89,
+      "our_progress_pct": 11.912640775547214,
+      "mattecca_estimate_pct": 50.99,
+      "final_lula_pct": 50.90240511717216,
+      "mattecca_error_pp": 0.08759488282784389,
+      "poststrat_error_pp": 0.11919345660521552,
+      "swing_error_pp": 0.3872150215633474,
+      "hierarchical_error_pp": 0.4661010211575167
+    },
+    {
+      "year": 2026,
+      "nominal_mark_pct": 1,
+      "mattecca_progress_pct": 1.02,
+      "our_progress_pct": 1.0690998687913784,
+      "mattecca_estimate_pct": 46.935,
+      "final_lula_pct": 51.7851828842626,
+      "mattecca_error_pp": 4.850182884262601,
+      "poststrat_error_pp": 0.29623472819024776,
+      "swing_error_pp": 0.5414551836493975,
+      "hierarchical_error_pp": 0.6907203866475364
+    },
+    {
+      "year": 2026,
+      "nominal_mark_pct": 2,
+      "mattecca_progress_pct": 2.03,
+      "our_progress_pct": 2.035636662293046,
+      "mattecca_estimate_pct": 50.239,
+      "final_lula_pct": 51.7851828842626,
+      "mattecca_error_pp": 1.5461828842626062,
+      "poststrat_error_pp": 0.037905158315187926,
+      "swing_error_pp": 0.4669826249542819,
+      "hierarchical_error_pp": 0.6111883724682521
+    },
+    {
+      "year": 2026,
+      "nominal_mark_pct": 5,
+      "mattecca_progress_pct": 5.0,
+      "our_progress_pct": 5.0350056589978065,
+      "mattecca_estimate_pct": 53.348,
+      "final_lula_pct": 51.7851828842626,
+      "mattecca_error_pp": 1.5628171157373956,
+      "poststrat_error_pp": 1.102595211165902,
+      "swing_error_pp": 0.24229073197133966,
+      "hierarchical_error_pp": 0.3417411650725066
+    },
+    {
+      "year": 2026,
+      "nominal_mark_pct": 10,
+      "mattecca_progress_pct": 10.11,
+      "our_progress_pct": 10.118889033563367,
+      "mattecca_estimate_pct": 51.677,
+      "final_lula_pct": 51.7851828842626,
+      "mattecca_error_pp": 0.1081828842626038,
+      "poststrat_error_pp": 0.9892430152696585,
+      "swing_error_pp": 0.11943850921217747,
+      "hierarchical_error_pp": 0.28407839973630944
+    }
+  ],
+  "sustained_convergence": [
+    {
+      "year": 2022,
+      "model": "poststrat",
+      "epsilon_pp": 1.0,
+      "progress_pct": 3.00617759963392,
+      "sample_points": 107
+    },
+    {
+      "year": 2022,
+      "model": "poststrat",
+      "epsilon_pp": 0.5,
+      "progress_pct": 63.0138466362165,
+      "sample_points": 107
+    },
+    {
+      "year": 2022,
+      "model": "poststrat",
+      "epsilon_pp": 0.25,
+      "progress_pct": 79.00209309617226,
+      "sample_points": 107
+    },
+    {
+      "year": 2022,
+      "model": "swing",
+      "epsilon_pp": 1.0,
+      "progress_pct": 0.10020591998779733,
+      "sample_points": 107
+    },
+    {
+      "year": 2022,
+      "model": "swing",
+      "epsilon_pp": 0.5,
+      "progress_pct": 30.01834636928318,
+      "sample_points": 107
+    },
+    {
+      "year": 2022,
+      "model": "swing",
+      "epsilon_pp": 0.25,
+      "progress_pct": 64.00531324412958,
+      "sample_points": 107
+    },
+    {
+      "year": 2022,
+      "model": "hierarchical",
+      "epsilon_pp": 1.0,
+      "progress_pct": 0.10020591998779733,
+      "sample_points": 107
+    },
+    {
+      "year": 2022,
+      "model": "hierarchical",
+      "epsilon_pp": 0.5,
+      "progress_pct": 44.00946554017982,
+      "sample_points": 107
+    },
+    {
+      "year": 2022,
+      "model": "hierarchical",
+      "epsilon_pp": 0.25,
+      "progress_pct": 71.00447431084596,
+      "sample_points": 107
+    },
+    {
+      "year": 2022,
+      "model": "mattecca",
+      "epsilon_pp": 1.0,
+      "progress_pct": 0.12,
+      "sample_points": 71
+    },
+    {
+      "year": 2022,
+      "model": "mattecca",
+      "epsilon_pp": 0.5,
+      "progress_pct": 1.62,
+      "sample_points": 71
+    },
+    {
+      "year": 2022,
+      "model": "mattecca",
+      "epsilon_pp": 0.25,
+      "progress_pct": 1.62,
+      "sample_points": 71
+    },
+    {
+      "year": 2026,
+      "model": "poststrat",
+      "epsilon_pp": 1.0,
+      "progress_pct": 21.01581514608227,
+      "sample_points": 105
+    },
+    {
+      "year": 2026,
+      "model": "poststrat",
+      "epsilon_pp": 0.5,
+      "progress_pct": 25.03580693302351,
+      "sample_points": 105
+    },
+    {
+      "year": 2026,
+      "model": "poststrat",
+      "epsilon_pp": 0.25,
+      "progress_pct": 45.01577508238099,
+      "sample_points": 105
+    },
+    {
+      "year": 2026,
+      "model": "swing",
+      "epsilon_pp": 1.0,
+      "progress_pct": 0.13761881391412345,
+      "sample_points": 105
+    },
+    {
+      "year": 2026,
+      "model": "swing",
+      "epsilon_pp": 0.5,
+      "progress_pct": 2.0150038561312487,
+      "sample_points": 105
+    },
+    {
+      "year": 2026,
+      "model": "swing",
+      "epsilon_pp": 0.25,
+      "progress_pct": 58.031269718852975,
+      "sample_points": 105
+    },
+    {
+      "year": 2026,
+      "model": "hierarchical",
+      "epsilon_pp": 1.0,
+      "progress_pct": 0.13761881391412345,
+      "sample_points": 105
+    },
+    {
+      "year": 2026,
+      "model": "hierarchical",
+      "epsilon_pp": 0.5,
+      "progress_pct": 39.00822307468875,
+      "sample_points": 105
+    },
+    {
+      "year": 2026,
+      "model": "hierarchical",
+      "epsilon_pp": 0.25,
+      "progress_pct": 47.04420027844272,
+      "sample_points": 105
+    },
+    {
+      "year": 2026,
+      "model": "mattecca",
+      "epsilon_pp": 1.0,
+      "progress_pct": 5.3,
+      "sample_points": 375
+    },
+    {
+      "year": 2026,
+      "model": "mattecca",
+      "epsilon_pp": 0.5,
+      "progress_pct": 24.86,
+      "sample_points": 375
+    },
+    {
+      "year": 2026,
+      "model": "mattecca",
+      "epsilon_pp": 0.25,
+      "progress_pct": 67.98,
+      "sample_points": 375
+    }
+  ],
+  "mean_error_selected_points": [
+    {
+      "year": 2022,
+      "model": "hierarchical",
+      "error_pp": 0.34684634966045125
+    },
+    {
+      "year": 2022,
+      "model": "mattecca",
+      "error_pp": 0.11759488282784147
+    },
+    {
+      "year": 2022,
+      "model": "poststrat",
+      "error_pp": 0.5818501484721877
+    },
+    {
+      "year": 2022,
+      "model": "swing",
+      "error_pp": 0.22861904737405403
+    },
+    {
+      "year": 2026,
+      "model": "hierarchical",
+      "error_pp": 0.48193208098115115
+    },
+    {
+      "year": 2026,
+      "model": "mattecca",
+      "error_pp": 2.0168414421313017
+    },
+    {
+      "year": 2026,
+      "model": "poststrat",
+      "error_pp": 0.6064945282352491
+    },
+    {
+      "year": 2026,
+      "model": "swing",
+      "error_pp": 0.3425417624467991
+    }
+  ],
+  "comparison_type": "descriptive, similar section percentages, not paired snapshots",
+  "sha256": {
+    "reports/mattecca-comparison-20261107/comparison.md": "d3116659e49058535ab6f8b5643ec814b8c6fab432055f2e8c82c78f1fef817d",
+    "reports/mattecca-comparison-20261107/comparison.csv": "0a5a23a0af581272b418792cf2ab3cd65f3faa5286387be36ca38ad215dab6dd",
+    "reports/mattecca-comparison-20261107/comparison.parquet": "76fb751de05fd5de9569288092764eaabf1fa35a2a0cc7c18d1aecea1036e1a1",
+    "reports/mattecca-comparison-20261107/milestones.csv": "5a15c4ff54740c2ec00d7bc315fe6fadf9f06c8ecfbb93eac976d9dfda2eab73",
+    "reports/mattecca-comparison-20261107/convergence.csv": "7e35b5898955df0e63c46ac4d469437c9b8fdef0319aa65003fe6ee3e97ca4fa",
+    "reports/mattecca-comparison-20261107/comparison.png": "f65bf352b1fa078c9a41be695d10c02df65ad7e92367e01c348dada24a3adef3",
+    "reports/mattecca-comparison-20261107/comparison.svg": "7ed8dcbc09ad9c30ac793bf26321959fa1aefdc0f1db73b19f2bce6d4ec169d9",
+    "reports/mattecca-comparison-20261107/compare.py": "1a0cce8bb214750ec8f3235e9f4d3ccfcdf6a672bf44be87b384347211feed9f"
+  }
+}

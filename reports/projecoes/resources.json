@@ -1,0 +1,12 @@
+{
+  "device": "cpu",
+  "gpu_exposed": false,
+  "cuda_initialized": false,
+  "seconds": 102.39731574500911,
+  "peak_rss_mib": 988.75390625,
+  "threads": 2,
+  "projection_intervals": 927,
+  "replicates": 185400,
+  "computed_intervals": 309,
+  "reused_intervals": 618
+}

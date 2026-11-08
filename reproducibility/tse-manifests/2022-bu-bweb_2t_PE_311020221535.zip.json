@@ -1,0 +1,15 @@
+{
+  "year": 2022,
+  "kind": "bu",
+  "url": "https://cdn.tse.jus.br/estatistica/sead/eleicoes/eleicoes2022/buweb/bweb_2t_PE_311020221535.zip",
+  "resource_name": "PE - Boletim de Urna - Segundo turno - 31.10.2022",
+  "resource_id": "ae837fd2-1f5e-4739-bf10-80425eea8c27",
+  "path": "raw/2022/bu/bweb_2t_PE_311020221535.zip",
+  "status": "complete",
+  "retrieved_at": "2026-11-07T02:39:55.938817+00:00",
+  "expected_bytes": 3469891,
+  "etag": "\"34f243-5ec594fb0275c\"",
+  "last_modified": "Mon, 31 Oct 2022 19:06:56 GMT",
+  "bytes": 3469891,
+  "sha256": "023aa5a0584bfd89023803a7823e2bf2a56ed839713aed4dbe3d5572201ea9b4"
+}

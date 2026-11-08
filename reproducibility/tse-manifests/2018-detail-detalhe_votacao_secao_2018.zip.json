@@ -1,0 +1,15 @@
+{
+  "year": 2018,
+  "kind": "detail",
+  "url": "https://cdn.tse.jus.br/estatistica/sead/odsele/detalhe_votacao_secao/detalhe_votacao_secao_2018.zip",
+  "resource_name": "Detalhe da apuração por seção eleitoral",
+  "resource_id": "7f6271bc-555e-47a5-aace-7009dc01c341",
+  "path": "raw/2018/detail/detalhe_votacao_secao_2018.zip",
+  "status": "complete",
+  "retrieved_at": "2026-11-07T12:52:16.736127+00:00",
+  "expected_bytes": 256133172,
+  "etag": "\"f444834-64f09c8d4cf8f\"",
+  "last_modified": "Thu, 09 Apr 2026 16:48:22 GMT",
+  "bytes": 256133172,
+  "sha256": "de35b08db427ee0c3089d88317e6166ea5dea33630f5b1dabdccf3304de48f70"
+}

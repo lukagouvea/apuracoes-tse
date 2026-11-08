@@ -1,0 +1,57 @@
+{
+  "html_sha256": "19ea6af8bff558eefdc9fdd22c0c3f54b6785f884563fb2f2b0eb3553376c905",
+  "parquet_sha256": "795b5a1ac27eccdeb1388f4728264260ac5c00937f3f6dc1f8462e2e79f8c082",
+  "source_code": {
+    "/workspace/scripts/build_apuracao.py": "3de1f96a569b70f1a1f8714ae14f6f55278556e53f9c5cc65c976a10e77462a7",
+    "src/projecao/totalization.py": "e68b8016d204a90708a53d7d24baef460d8d0a6ee55872ce9c53092412574261",
+    "src/projecao/timing.py": "67a0f958d7ba476e72234b895e8d50a7e5f748592a5416d742b7a5d4f3e14021",
+    "src/projecao/study.py": "47739f6eed45fd12af2bcb1385246d7a4ded9841ad54e60c10939aa8d01e3c90",
+    "configs/study.json": "630c1554865433d5002c3fbbe51fe5d399e82b1b504a25de92d980e1c68400bc",
+    "templates/apuracao.html": "44de6aa8ba80a487bb35d61517eff7e2a7cfe8a35ef91147c6ec767bc3f2a846"
+  },
+  "series": {
+    "2018": {
+      "name_a": "Fernando Haddad",
+      "name_b": "Jair Bolsonaro",
+      "final_a": 47040906,
+      "final_b": 57797847,
+      "kind": "reconstructed_first_totalization",
+      "has_sections": true,
+      "late_sections": 8,
+      "adapter": "Reconstrução com votos finais por seção e horário oficial da primeira totalização. Não reproduz correções intermediárias nem o instante de publicação na internet. Oito registros de fevereiro de 2019 são preservados.",
+      "start": "2018-10-28T17:01:07",
+      "sections_total": 454448,
+      "source": "https://cdn.tse.jus.br/estatistica/sead/odsele/detalhe_votacao_secao/detalhe_votacao_secao_2018.zip",
+      "source_sha256": "de35b08db427ee0c3089d88317e6166ea5dea33630f5b1dabdccf3304de48f70",
+      "updates": 1554
+    },
+    "2022": {
+      "name_a": "Luiz Inácio Lula da Silva",
+      "name_b": "Jair Bolsonaro",
+      "final_a": 60345999,
+      "final_b": 58206354,
+      "kind": "official_totalization",
+      "has_sections": true,
+      "adapter": "Série nacional acumulada do TSE.",
+      "start": "2022-10-30T17:00:51",
+      "sections_total": 472075,
+      "source": "https://cdn.tse.jus.br/estatistica/sead/eleicoes/eleicoes2022/Historico_Totalizacao_Presidente_BR_2T_2022.zip",
+      "source_sha256": "1f12128fbcfacab755e0e83d9c0a350ed99ae68ea3d024aaa7bc58fe0c1dda3c",
+      "updates": 5286
+    },
+    "2026": {
+      "name_a": "Luiz Inácio Lula da Silva",
+      "name_b": "Flávio Nantes Bolsonaro",
+      "final_a": 64256232,
+      "final_b": 59826041,
+      "kind": "official_totalization",
+      "has_sections": true,
+      "adapter": "Incrementos oficiais por município/zona agregados nacionalmente por horário.",
+      "start": "2026-10-25T17:05:21",
+      "sections_total": 499248,
+      "source": "https://cdn.tse.jus.br/estatistica/sead/eleicoes/eleicoes2026/historicototalizacao/Historico_Totalizacao_Presidente_BR_2T_2026.zip",
+      "source_sha256": "0594dbb8fdb7974f0ad520d5bd4552ae40479601984b0073d7ce5a6a1d43b4cd",
+      "updates": 7323
+    }
+  }
+}

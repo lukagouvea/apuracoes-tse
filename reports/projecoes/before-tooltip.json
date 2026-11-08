@@ -1,0 +1,10 @@
+{
+  "artifacts": {
+    "reports/projecoes/replicas.parquet": "9ba7ff7ed804a5048ffb521a9be025dc0d997d230754d322206d60adaa79ffc8",
+    "reports/projecoes/cobertura.csv": "f49948554729cccba45dfe0a5337c6519a23c3f43d9b8136066c52b476480903",
+    "reports/projecoes/series.json": "4cf9b004e34dd2dea027a414cfb72aefdf46b637e34eac6b4e96b2083ad91f22",
+    "reports/projecoes/intervalos.csv": "833ab404663be249b45e1566f505e3fba1f3e0bb2f304102b11244afe92a8454",
+    "reports/projecoes/resources.json": "7dabd8c2148cbc3dc2f630879c76a2d14066205db1a717502ccf93cff73bbea7",
+    "reports/projecoes/intervalos.parquet": "b92b0b5cd4ddd33a903dc56c95a43e202834e125055bba4ece047543d3421e54"
+  }
+}

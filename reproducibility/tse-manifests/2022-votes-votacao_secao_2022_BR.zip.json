@@ -1,0 +1,15 @@
+{
+  "year": 2022,
+  "kind": "votes",
+  "url": "https://cdn.tse.jus.br/estatistica/sead/odsele/votacao_secao/votacao_secao_2022_BR.zip",
+  "resource_name": "Presidente - Votação por seção eleitoral - 2022",
+  "resource_id": "f509562b-3b7f-487d-ad61-145a7ae6b96f",
+  "path": "raw/2022/votes/votacao_secao_2022_BR.zip",
+  "status": "complete",
+  "retrieved_at": "2026-11-07T02:28:37.837803+00:00",
+  "expected_bytes": 271292455,
+  "etag": "\"102b9827-5ee383298b080\"",
+  "last_modified": "Thu, 24 Nov 2022 14:26:58 GMT",
+  "bytes": 271292455,
+  "sha256": "9353993de5cf03778aef44e01d4925e7ee105f5262491d344a2f0dbc956b0139"
+}

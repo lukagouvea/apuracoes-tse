@@ -1,0 +1,15 @@
+{
+  "year": 2026,
+  "kind": "bu",
+  "url": "https://cdn.tse.jus.br/estatistica/sead/eleicoes/eleicoes2026/buweb/bweb_2t_SP_261020260742.zip",
+  "resource_name": "SP - Boletim de Urna - Segundo turno - 26.10.2026",
+  "resource_id": "f6205a0c-a6af-4e94-abad-f82488590efb",
+  "path": "raw/2026/bu/bweb_2t_SP_261020260742.zip",
+  "status": "complete",
+  "retrieved_at": "2026-11-07T02:33:14.739657+00:00",
+  "expected_bytes": 28188300,
+  "etag": "\"1ae1e8c-65ebd120124ef\"",
+  "last_modified": "Mon, 26 Oct 2026 12:00:04 GMT",
+  "bytes": 28188300,
+  "sha256": "ffadfa193e68261e2e8aa667b3075e6bc8172b0b6629c752d3b8cf680ac10c4e"
+}

@@ -1,0 +1,15 @@
+{
+  "year": 2022,
+  "kind": "bu",
+  "url": "https://cdn.tse.jus.br/estatistica/sead/eleicoes/eleicoes2022/buweb/bweb_2t_AL_311020221535.zip",
+  "resource_name": "AL - Boletim de Urna - Segundo turno - 31.10.2022",
+  "resource_id": "9974e5a8-9359-410d-86c0-611b811ceaf2",
+  "path": "raw/2022/bu/bweb_2t_AL_311020221535.zip",
+  "status": "complete",
+  "retrieved_at": "2026-11-07T02:39:51.738580+00:00",
+  "expected_bytes": 1341316,
+  "etag": "\"147784-5ec594f9d1091\"",
+  "last_modified": "Mon, 31 Oct 2022 19:06:55 GMT",
+  "bytes": 1341316,
+  "sha256": "934a061e9f9905c9dd14e5f58316c07ab0502190f568df9801ada6a068475148"
+}

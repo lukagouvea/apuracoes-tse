@@ -1,0 +1,15 @@
+{
+  "year": 2022,
+  "kind": "summary",
+  "url": "https://cdn.tse.jus.br/estatistica/sead/odsele/votacao_candidato_munzona/votacao_candidato_munzona_2022.zip",
+  "resource_name": "Votação nominal por município e zona",
+  "resource_id": "40fdcf49-256a-4c81-87cf-711545bd1528",
+  "path": "raw/2022/summary/votacao_candidato_munzona_2022.zip",
+  "status": "complete",
+  "retrieved_at": "2026-11-07T02:31:05.155315+00:00",
+  "expected_bytes": 596794117,
+  "etag": "\"23925b05-65f9686829e84\"",
+  "last_modified": "Fri, 06 Nov 2026 07:26:06 GMT",
+  "bytes": 596794117,
+  "sha256": "d523c657dd5720eab3f33857d0edfbb304f511636ddd04444c6986b053668763"
+}

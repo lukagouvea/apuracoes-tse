@@ -1,0 +1,42 @@
+{
+  "status": "passed",
+  "reference_policy": "same_year_first_round",
+  "checks": [
+    {
+      "year": 2018,
+      "reference_turn": 1,
+      "turn": 2,
+      "sections_first_turn": 454450,
+      "valid_votes_first_turn": 107050749,
+      "source_download_manifest_matches": true,
+      "normalized_first_turn_totals_match": true,
+      "known_zero_volume_municipalities": 0,
+      "projections": 15,
+      "endpoints_exact": true
+    },
+    {
+      "year": 2022,
+      "reference_turn": 1,
+      "turn": 2,
+      "sections_first_turn": 472028,
+      "valid_votes_first_turn": 118229719,
+      "source_download_manifest_matches": true,
+      "normalized_first_turn_totals_match": true,
+      "known_zero_volume_municipalities": 2,
+      "projections": 15,
+      "endpoints_exact": true
+    },
+    {
+      "year": 2026,
+      "reference_turn": 1,
+      "turn": 2,
+      "sections_first_turn": 499206,
+      "valid_votes_first_turn": 119306034,
+      "source_download_manifest_matches": true,
+      "normalized_first_turn_totals_match": true,
+      "known_zero_volume_municipalities": 0,
+      "projections": 15,
+      "endpoints_exact": true
+    }
+  ]
+}

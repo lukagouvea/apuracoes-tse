@@ -1,0 +1,15 @@
+{
+  "year": 2022,
+  "kind": "bu",
+  "url": "https://cdn.tse.jus.br/estatistica/sead/eleicoes/eleicoes2022/buweb/bweb_2t_MT_311020221535.zip",
+  "resource_name": "MT - Boletim de Urna - Segundo turno - 31.10.2022",
+  "resource_id": "097dc255-be50-4931-8caa-9eca9f08af7c",
+  "path": "raw/2022/bu/bweb_2t_MT_311020221535.zip",
+  "status": "complete",
+  "retrieved_at": "2026-11-07T02:39:55.069511+00:00",
+  "expected_bytes": 1081503,
+  "etag": "\"10809f-5ec594fabb2b8\"",
+  "last_modified": "Mon, 31 Oct 2022 19:06:56 GMT",
+  "bytes": 1081503,
+  "sha256": "1db6887cc30124724be3cd75fdd2d923f78545e4cd0f1bd3fbb2b7c2f80dbef2"
+}

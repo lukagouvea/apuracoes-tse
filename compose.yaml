@@ -1,0 +1,27 @@
+x-runtime: &runtime
+  image: sha256:bddd3bf9b9e44eee13044ba2afe85a757c1e5009e94bfba5701facf600465c63
+  pull_policy: never
+  gpus: all
+  shm_size: 2gb
+  user: "${LOCAL_UID:-1000}:${LOCAL_GID:-1000}"
+  environment:
+    HOME: /tmp
+    PYTHONPATH: /data/tse/runtime/python:/workspace/src
+    PYTHONDONTWRITEBYTECODE: "1"
+    PYTHONUNBUFFERED: "1"
+  working_dir: /workspace
+  entrypoint: []
+services:
+  app:
+    <<: *runtime
+    volumes:
+      - .:/workspace
+      - ${TSE_DATA_ROOT:-/mnt/ssd1tb/inf425-tse}:/data/tse
+    command: ["sleep", "infinity"]
+  experiment:
+    <<: *runtime
+    profiles: ["experiment"]
+    volumes:
+      - .:/workspace
+      - ${TSE_DATA_ROOT:-/mnt/ssd1tb/inf425-tse}:/data/tse:ro
+    entrypoint: ["/opt/venv/bin/python", "-m", "projecao"]

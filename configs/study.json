@@ -1,0 +1,15 @@
+{
+  "version": 3,
+  "evaluation_years": [2018, 2022, 2026],
+  "office": "Presidente",
+  "turn": 2,
+  "progress_unit": "sections_in_dataset",
+  "smoke_milestones": [0.01, 0.02, 0.05, 0.1, 1.0],
+  "convergence_thresholds_pp": [1.0, 0.5, 0.25],
+  "recommended_experiment_grid_step": 0.01,
+  "reference_policy": "same_year_first_round",
+  "reference_turn": 1,
+  "reference_preference": "A1 / (A1 + B1)",
+  "reference_volume": "all_first_round_valid_votes",
+  "archive_policy": "Keep earlier datasets and runs; they are not evaluation elections."
+}

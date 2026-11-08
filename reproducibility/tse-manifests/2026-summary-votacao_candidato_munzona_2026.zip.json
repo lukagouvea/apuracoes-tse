@@ -1,0 +1,15 @@
+{
+  "year": 2026,
+  "kind": "summary",
+  "url": "https://cdn.tse.jus.br/estatistica/sead/odsele/votacao_candidato_munzona/votacao_candidato_munzona_2026.zip",
+  "resource_name": "Votação nominal por município e zona",
+  "resource_id": "c807b826-21ff-4bcf-97ca-d86482656320",
+  "path": "raw/2026/summary/votacao_candidato_munzona_2026.zip",
+  "status": "complete",
+  "retrieved_at": "2026-11-07T02:31:23.551464+00:00",
+  "expected_bytes": 466014474,
+  "etag": "\"1bc6d10a-65fa3b82c8e5e\"",
+  "last_modified": "Fri, 06 Nov 2026 23:10:34 GMT",
+  "bytes": 466014474,
+  "sha256": "86eea9d9ab3378b9c14821817fe0ae66226bdac397a1c1cc2956f68e8170e211"
+}

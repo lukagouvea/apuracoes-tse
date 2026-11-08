@@ -1,0 +1,15 @@
+{
+  "year": 2026,
+  "kind": "bu",
+  "url": "https://cdn.tse.jus.br/estatistica/sead/eleicoes/eleicoes2026/buweb/bweb_2t_SC_261020260742.zip",
+  "resource_name": "SC - Boletim de Urna - Segundo turno - 26.10.2026",
+  "resource_id": "7c874499-a9dd-440e-9526-d46033e93625",
+  "path": "raw/2026/bu/bweb_2t_SC_261020260742.zip",
+  "status": "complete",
+  "retrieved_at": "2026-11-07T02:33:14.239776+00:00",
+  "expected_bytes": 4487185,
+  "etag": "\"447811-65ebd10f9103d\"",
+  "last_modified": "Mon, 26 Oct 2026 11:59:46 GMT",
+  "bytes": 4487185,
+  "sha256": "6f169b88a07858e920b3c9e974f3ae5238f36dfe6e6d138a1758764c5b4de697"
+}

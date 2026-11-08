@@ -1,0 +1,488 @@
+{
+  "reference_policy": "same_year_first_round",
+  "at_one_percent": [
+    {
+      "year": 2018,
+      "method": "baseline",
+      "fraction_sections": 0.014531915642713798,
+      "observed_sections": 6604,
+      "estimate_pct": 34.49090630173666,
+      "final_pct": 44.869768719969414,
+      "error_pp": 10.37886241823276
+    },
+    {
+      "year": 2018,
+      "method": "poststrat",
+      "fraction_sections": 0.014531915642713798,
+      "observed_sections": 6604,
+      "estimate_pct": 45.31670301466579,
+      "final_pct": 44.869768719969414,
+      "error_pp": 0.44693429469637724
+    },
+    {
+      "year": 2018,
+      "method": "swing",
+      "fraction_sections": 0.014531915642713798,
+      "observed_sections": 6604,
+      "estimate_pct": 45.451367391496525,
+      "final_pct": 44.869768719969414,
+      "error_pp": 0.5815986715271115
+    },
+    {
+      "year": 2018,
+      "method": "hierarchical",
+      "fraction_sections": 0.014531915642713798,
+      "observed_sections": 6604,
+      "estimate_pct": 45.50754089180604,
+      "final_pct": 44.869768719969414,
+      "error_pp": 0.6377721718366203
+    },
+    {
+      "year": 2022,
+      "method": "baseline",
+      "fraction_sections": 0.010183717915038939,
+      "observed_sections": 4807,
+      "estimate_pct": 43.489313485306575,
+      "final_pct": 50.90240511717216,
+      "error_pp": 7.413091631865582
+    },
+    {
+      "year": 2022,
+      "method": "poststrat",
+      "fraction_sections": 0.010183717915038939,
+      "observed_sections": 4807,
+      "estimate_pct": 52.01752878218382,
+      "final_pct": 50.90240511717216,
+      "error_pp": 1.1151236650116636
+    },
+    {
+      "year": 2022,
+      "method": "swing",
+      "fraction_sections": 0.010183717915038939,
+      "observed_sections": 4807,
+      "estimate_pct": 51.13723536595048,
+      "final_pct": 50.90240511717216,
+      "error_pp": 0.23483024877832825
+    },
+    {
+      "year": 2022,
+      "method": "hierarchical",
+      "fraction_sections": 0.010183717915038939,
+      "observed_sections": 4807,
+      "estimate_pct": 51.362059578329955,
+      "final_pct": 50.90240511717216,
+      "error_pp": 0.45965446115779907
+    },
+    {
+      "year": 2026,
+      "method": "baseline",
+      "fraction_sections": 0.010690998687913783,
+      "observed_sections": 5337,
+      "estimate_pct": 52.72053362939724,
+      "final_pct": 51.7851828842626,
+      "error_pp": 0.9353507451346332
+    },
+    {
+      "year": 2026,
+      "method": "poststrat",
+      "fraction_sections": 0.010690998687913783,
+      "observed_sections": 5337,
+      "estimate_pct": 51.488948156072354,
+      "final_pct": 51.7851828842626,
+      "error_pp": 0.29623472819024776
+    },
+    {
+      "year": 2026,
+      "method": "swing",
+      "fraction_sections": 0.010690998687913783,
+      "observed_sections": 5337,
+      "estimate_pct": 52.326638067912,
+      "final_pct": 51.7851828842626,
+      "error_pp": 0.5414551836493975
+    },
+    {
+      "year": 2026,
+      "method": "hierarchical",
+      "fraction_sections": 0.010690998687913783,
+      "observed_sections": 5337,
+      "estimate_pct": 52.47590327091014,
+      "final_pct": 51.7851828842626,
+      "error_pp": 0.6907203866475364
+    }
+  ],
+  "convergence": [
+    {
+      "year": 2018,
+      "method": "baseline",
+      "epsilon_pp": 1.0,
+      "fraction_sections": 0.5300430412280392
+    },
+    {
+      "year": 2018,
+      "method": "baseline",
+      "epsilon_pp": 0.5,
+      "fraction_sections": 0.9305421082280041
+    },
+    {
+      "year": 2018,
+      "method": "baseline",
+      "epsilon_pp": 0.25,
+      "fraction_sections": 0.9802419638770552
+    },
+    {
+      "year": 2018,
+      "method": "poststrat",
+      "epsilon_pp": 1.0,
+      "fraction_sections": 0.4106982537055945
+    },
+    {
+      "year": 2018,
+      "method": "poststrat",
+      "epsilon_pp": 0.5,
+      "fraction_sections": 0.7601661796289124
+    },
+    {
+      "year": 2018,
+      "method": "poststrat",
+      "epsilon_pp": 0.25,
+      "fraction_sections": 0.8807124247438651
+    },
+    {
+      "year": 2018,
+      "method": "swing",
+      "epsilon_pp": 1.0,
+      "fraction_sections": 0.23119036721473085
+    },
+    {
+      "year": 2018,
+      "method": "swing",
+      "epsilon_pp": 0.5,
+      "fraction_sections": 0.5202399394430166
+    },
+    {
+      "year": 2018,
+      "method": "swing",
+      "epsilon_pp": 0.25,
+      "fraction_sections": 0.6303361440692885
+    },
+    {
+      "year": 2018,
+      "method": "hierarchical",
+      "epsilon_pp": 1.0,
+      "fraction_sections": 0.24037733690103158
+    },
+    {
+      "year": 2018,
+      "method": "hierarchical",
+      "epsilon_pp": 0.5,
+      "fraction_sections": 0.5300430412280392
+    },
+    {
+      "year": 2018,
+      "method": "hierarchical",
+      "epsilon_pp": 0.25,
+      "fraction_sections": 0.8007428792733162
+    },
+    {
+      "year": 2022,
+      "method": "baseline",
+      "epsilon_pp": 1.0,
+      "fraction_sections": 0.6200077114069504
+    },
+    {
+      "year": 2022,
+      "method": "baseline",
+      "epsilon_pp": 0.5,
+      "fraction_sections": 0.8500131348140365
+    },
+    {
+      "year": 2022,
+      "method": "baseline",
+      "epsilon_pp": 0.25,
+      "fraction_sections": 0.9500389807384307
+    },
+    {
+      "year": 2022,
+      "method": "poststrat",
+      "epsilon_pp": 1.0,
+      "fraction_sections": 0.0300617759963392
+    },
+    {
+      "year": 2022,
+      "method": "poststrat",
+      "epsilon_pp": 0.5,
+      "fraction_sections": 0.630138466362165
+    },
+    {
+      "year": 2022,
+      "method": "poststrat",
+      "epsilon_pp": 0.25,
+      "fraction_sections": 0.7900209309617227
+    },
+    {
+      "year": 2022,
+      "method": "swing",
+      "epsilon_pp": 1.0,
+      "fraction_sections": 0.0010020591998779734
+    },
+    {
+      "year": 2022,
+      "method": "swing",
+      "epsilon_pp": 0.5,
+      "fraction_sections": 0.3001834636928318
+    },
+    {
+      "year": 2022,
+      "method": "swing",
+      "epsilon_pp": 0.25,
+      "fraction_sections": 0.6400531324412958
+    },
+    {
+      "year": 2022,
+      "method": "hierarchical",
+      "epsilon_pp": 1.0,
+      "fraction_sections": 0.0010020591998779734
+    },
+    {
+      "year": 2022,
+      "method": "hierarchical",
+      "epsilon_pp": 0.5,
+      "fraction_sections": 0.4400946554017982
+    },
+    {
+      "year": 2022,
+      "method": "hierarchical",
+      "epsilon_pp": 0.25,
+      "fraction_sections": 0.7100447431084597
+    },
+    {
+      "year": 2026,
+      "method": "baseline",
+      "epsilon_pp": 1.0,
+      "fraction_sections": 0.6600114181548662
+    },
+    {
+      "year": 2026,
+      "method": "baseline",
+      "epsilon_pp": 0.5,
+      "fraction_sections": 0.8103704890776334
+    },
+    {
+      "year": 2026,
+      "method": "baseline",
+      "epsilon_pp": 0.25,
+      "fraction_sections": 0.9000811289951022
+    },
+    {
+      "year": 2026,
+      "method": "poststrat",
+      "epsilon_pp": 1.0,
+      "fraction_sections": 0.2101581514608227
+    },
+    {
+      "year": 2026,
+      "method": "poststrat",
+      "epsilon_pp": 0.5,
+      "fraction_sections": 0.2503580693302351
+    },
+    {
+      "year": 2026,
+      "method": "poststrat",
+      "epsilon_pp": 0.25,
+      "fraction_sections": 0.4501577508238099
+    },
+    {
+      "year": 2026,
+      "method": "swing",
+      "epsilon_pp": 1.0,
+      "fraction_sections": 0.0013761881391412345
+    },
+    {
+      "year": 2026,
+      "method": "swing",
+      "epsilon_pp": 0.5,
+      "fraction_sections": 0.020150038561312488
+    },
+    {
+      "year": 2026,
+      "method": "swing",
+      "epsilon_pp": 0.25,
+      "fraction_sections": 0.5803126971885297
+    },
+    {
+      "year": 2026,
+      "method": "hierarchical",
+      "epsilon_pp": 1.0,
+      "fraction_sections": 0.0013761881391412345
+    },
+    {
+      "year": 2026,
+      "method": "hierarchical",
+      "epsilon_pp": 0.5,
+      "fraction_sections": 0.3900822307468875
+    },
+    {
+      "year": 2026,
+      "method": "hierarchical",
+      "epsilon_pp": 0.25,
+      "fraction_sections": 0.4704420027844272
+    }
+  ],
+  "resources": {
+    "phase": "grid",
+    "device": "cpu",
+    "gpu_devices_exposed": false,
+    "cuda_initialized": false,
+    "torch_threads": 2,
+    "nice": 10,
+    "limits": {
+      "cpu.max": "200000 100000",
+      "memory.max": "2147483648",
+      "memory.swap.max": "0"
+    },
+    "requested_milestones": [
+      0.001,
+      0.002,
+      0.005,
+      0.01,
+      0.02,
+      0.03,
+      0.04,
+      0.05,
+      0.06,
+      0.07,
+      0.08,
+      0.09,
+      0.1,
+      0.11,
+      0.12,
+      0.13,
+      0.14,
+      0.15,
+      0.16,
+      0.17,
+      0.18,
+      0.19,
+      0.2,
+      0.21,
+      0.22,
+      0.23,
+      0.24,
+      0.25,
+      0.26,
+      0.27,
+      0.28,
+      0.29,
+      0.3,
+      0.31,
+      0.32,
+      0.33,
+      0.34,
+      0.35,
+      0.36,
+      0.37,
+      0.38,
+      0.39,
+      0.4,
+      0.41,
+      0.42,
+      0.43,
+      0.44,
+      0.45,
+      0.46,
+      0.47,
+      0.48,
+      0.49,
+      0.5,
+      0.51,
+      0.52,
+      0.53,
+      0.54,
+      0.55,
+      0.56,
+      0.57,
+      0.58,
+      0.59,
+      0.6,
+      0.61,
+      0.62,
+      0.63,
+      0.64,
+      0.65,
+      0.66,
+      0.67,
+      0.68,
+      0.69,
+      0.7,
+      0.71,
+      0.72,
+      0.73,
+      0.74,
+      0.75,
+      0.76,
+      0.77,
+      0.78,
+      0.79,
+      0.8,
+      0.81,
+      0.82,
+      0.83,
+      0.84,
+      0.85,
+      0.86,
+      0.87,
+      0.88,
+      0.89,
+      0.9,
+      0.91,
+      0.92,
+      0.93,
+      0.94,
+      0.95,
+      0.96,
+      0.97,
+      0.98,
+      0.99,
+      1.0
+    ],
+    "wall_seconds": 63.13447073998395,
+    "driver_sha256": "9f3a67e83af434aa56c28c9707b44b4a6dd3a1f019fe74f1b7417a92e40710e8",
+    "executions": [
+      {
+        "year": 2018,
+        "seconds": 20.493409976013936,
+        "rows": 309,
+        "snapshots_per_method": 103,
+        "peak_rss_mib": 796.70703125,
+        "output": "reports/cpu-study-20261107/grid-2018",
+        "cuda_initialized": false
+      },
+      {
+        "year": 2022,
+        "seconds": 20.872466376051307,
+        "rows": 309,
+        "snapshots_per_method": 103,
+        "peak_rss_mib": 844.48046875,
+        "output": "reports/cpu-study-20261107/grid-2022",
+        "cuda_initialized": false
+      },
+      {
+        "year": 2026,
+        "seconds": 21.604423827957362,
+        "rows": 309,
+        "snapshots_per_method": 103,
+        "peak_rss_mib": 877.5078125,
+        "output": "reports/cpu-study-20261107/grid-2026",
+        "cuda_initialized": false
+      }
+    ]
+  },
+  "rows": 1236,
+  "sha256": {
+    "analysis.md": "6a3d9a6cbce59045154777ecc28828ad422f749dd033566b5ccce8438d391533",
+    "comparison.parquet": "49111db26b8e9e1ff349ed43ce2210e715b1d4e579a2d58ae1cf22fd8e9695d8",
+    "error-curves.png": "758d0275301b68b93e9c4b3299dabfcab98f22d0a5dc647703fb8f895bbecc79",
+    "error-curves.svg": "f18a41fd144a8f7185e635c6336eb324b2fc6717113c45fb9403ccd9872db14d",
+    "summarize.py": "7e1a67ddae71ba7f07b0d2263afb78b5ec807508a8551e47989d9e128b1856cb"
+  }
+}

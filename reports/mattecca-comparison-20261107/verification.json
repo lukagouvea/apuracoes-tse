@@ -1,0 +1,14 @@
+{
+  "checked_at_utc": "2026-11-08T02:01:25.764633+00:00",
+  "status": "passed",
+  "raw_sources_hashed": 2,
+  "comparison_rows_verified": 32,
+  "csv_parquet_equal": true,
+  "aligned_cpu_model_rows_verified": 30,
+  "convergences_verified": 24,
+  "same_year_first_turn_reference": true,
+  "unchanged_estimator_parameters_and_core_code": true,
+  "figure_visually_inspected": true,
+  "paired_snapshots": false,
+  "mattecca_2026_live_chronology_verified": false
+}

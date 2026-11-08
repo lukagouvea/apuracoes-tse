@@ -1,0 +1,15 @@
+{
+  "year": 2022,
+  "kind": "bu",
+  "url": "https://cdn.tse.jus.br/estatistica/sead/eleicoes/eleicoes2022/buweb/bweb_2t_PA_311020221535.zip",
+  "resource_name": "PA - Boletim de Urna - Segundo turno - 31.10.2022",
+  "resource_id": "d76d4bcf-790f-40e1-9c91-ff16f30016a3",
+  "path": "raw/2022/bu/bweb_2t_PA_311020221535.zip",
+  "status": "complete",
+  "retrieved_at": "2026-11-07T02:39:55.322381+00:00",
+  "expected_bytes": 2118855,
+  "etag": "\"2054c7-5ec594facfec1\"",
+  "last_modified": "Mon, 31 Oct 2022 19:06:56 GMT",
+  "bytes": 2118855,
+  "sha256": "f8de600ece5af4a456f79e8116172e8340d4147163eb1dcb59a6bebb3d31ab65"
+}

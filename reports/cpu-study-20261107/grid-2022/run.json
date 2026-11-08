@@ -1,0 +1,438 @@
+{
+  "year": 2022,
+  "turn": 2,
+  "reference_year": 2022,
+  "reference_turn": 1,
+  "mode": "historical",
+  "seed": 42,
+  "device": "cpu",
+  "milestones": [
+    0.001,
+    0.002,
+    0.005,
+    0.01,
+    0.02,
+    0.03,
+    0.04,
+    0.05,
+    0.06,
+    0.07,
+    0.08,
+    0.09,
+    0.1,
+    0.11,
+    0.12,
+    0.13,
+    0.14,
+    0.15,
+    0.16,
+    0.17,
+    0.18,
+    0.19,
+    0.2,
+    0.21,
+    0.22,
+    0.23,
+    0.24,
+    0.25,
+    0.26,
+    0.27,
+    0.28,
+    0.29,
+    0.3,
+    0.31,
+    0.32,
+    0.33,
+    0.34,
+    0.35,
+    0.36,
+    0.37,
+    0.38,
+    0.39,
+    0.4,
+    0.41,
+    0.42,
+    0.43,
+    0.44,
+    0.45,
+    0.46,
+    0.47,
+    0.48,
+    0.49,
+    0.5,
+    0.51,
+    0.52,
+    0.53,
+    0.54,
+    0.55,
+    0.56,
+    0.57,
+    0.58,
+    0.59,
+    0.6,
+    0.61,
+    0.62,
+    0.63,
+    0.64,
+    0.65,
+    0.66,
+    0.67,
+    0.68,
+    0.69,
+    0.7,
+    0.71,
+    0.72,
+    0.73,
+    0.74,
+    0.75,
+    0.76,
+    0.77,
+    0.78,
+    0.79,
+    0.8,
+    0.81,
+    0.82,
+    0.83,
+    0.84,
+    0.85,
+    0.86,
+    0.87,
+    0.88,
+    0.89,
+    0.9,
+    0.91,
+    0.92,
+    0.93,
+    0.94,
+    0.95,
+    0.96,
+    0.97,
+    0.98,
+    0.99,
+    1.0
+  ],
+  "methods": [
+    "poststrat",
+    "swing",
+    "hierarchical"
+  ],
+  "defaults": {
+    "method": "poststrat",
+    "device": "cpu",
+    "lambda_region": 300000.0,
+    "lambda_uf": 150000.0,
+    "lambda_turnout": 200000.0
+  },
+  "chronology": {
+    "usable": true,
+    "coverage": 1.0,
+    "duplicate_sections": 0,
+    "unmatched_order_sections": 0,
+    "invalid_timestamps": 0,
+    "timestamp_meaning": "reception",
+    "tied_sections": 470413,
+    "first_timestamp": "2022-10-30 01:20:48",
+    "last_timestamp": "2022-10-31 00:17:31",
+    "limitation": "Reception order is not necessarily the order of official totalization.",
+    "year": 2022,
+    "status": "audited",
+    "conflicting_section_records": 0,
+    "invalid_source_timestamps": 0,
+    "source_manifests": [
+      {
+        "manifest": "manifests/2022-bu-bweb_2t_AC_311020221535.zip.json",
+        "sha256": "c7c1e1dd9d752f47ce6fdb05ced92001dee85d1fcbff81f850e1cb4aa404e127",
+        "url": "https://cdn.tse.jus.br/estatistica/sead/eleicoes/eleicoes2022/buweb/bweb_2t_AC_311020221535.zip"
+      },
+      {
+        "manifest": "manifests/2022-bu-bweb_2t_AL_311020221535.zip.json",
+        "sha256": "934a061e9f9905c9dd14e5f58316c07ab0502190f568df9801ada6a068475148",
+        "url": "https://cdn.tse.jus.br/estatistica/sead/eleicoes/eleicoes2022/buweb/bweb_2t_AL_311020221535.zip"
+      },
+      {
+        "manifest": "manifests/2022-bu-bweb_2t_AM_311020221535.zip.json",
+        "sha256": "05549e4562a3022cb297fa9f3b9bf1725a8484030811b97e5b29ccd7adb4089f",
+        "url": "https://cdn.tse.jus.br/estatistica/sead/eleicoes/eleicoes2022/buweb/bweb_2t_AM_311020221535.zip"
+      },
+      {
+        "manifest": "manifests/2022-bu-bweb_2t_AP_311020221535.zip.json",
+        "sha256": "3f79d99e643930cabdc506167d7fe46553cd965ef0ce7a072ffa1d3671e38a73",
+        "url": "https://cdn.tse.jus.br/estatistica/sead/eleicoes/eleicoes2022/buweb/bweb_2t_AP_311020221535.zip"
+      },
+      {
+        "manifest": "manifests/2022-bu-bweb_2t_BA_311020221535.zip.json",
+        "sha256": "47d236cabb758c9ba5410ac66d8a7e4dc3d9dfd0e1eca37fe662ebb49301a498",
+        "url": "https://cdn.tse.jus.br/estatistica/sead/eleicoes/eleicoes2022/buweb/bweb_2t_BA_311020221535.zip"
+      },
+      {
+        "manifest": "manifests/2022-bu-bweb_2t_CE_311020221535.zip.json",
+        "sha256": "ee7da46cdb0141c500e274d701998718a5c68f2bdae5e2f6daae0328577b3a77",
+        "url": "https://cdn.tse.jus.br/estatistica/sead/eleicoes/eleicoes2022/buweb/bweb_2t_CE_311020221535.zip"
+      },
+      {
+        "manifest": "manifests/2022-bu-bweb_2t_DF_311020221535.zip.json",
+        "sha256": "373b91674c437468494eeeff041d1b00760a27424b7c1094a791f1f0ef308965",
+        "url": "https://cdn.tse.jus.br/estatistica/sead/eleicoes/eleicoes2022/buweb/bweb_2t_DF_311020221535.zip"
+      },
+      {
+        "manifest": "manifests/2022-bu-bweb_2t_ES_311020221535.zip.json",
+        "sha256": "cd62f7f13731f57075ed9ae03d74a6cc2dde2179936b482bbc7489a593d938d9",
+        "url": "https://cdn.tse.jus.br/estatistica/sead/eleicoes/eleicoes2022/buweb/bweb_2t_ES_311020221535.zip"
+      },
+      {
+        "manifest": "manifests/2022-bu-bweb_2t_GO_311020221535.zip.json",
+        "sha256": "817a8cde9e399b8bfcebef4ac3594ecf5ef52862d3ff7bc46bff12ff434dedfd",
+        "url": "https://cdn.tse.jus.br/estatistica/sead/eleicoes/eleicoes2022/buweb/bweb_2t_GO_311020221535.zip"
+      },
+      {
+        "manifest": "manifests/2022-bu-bweb_2t_MA_311020221535.zip.json",
+        "sha256": "2eafff0950e35bed46f52020e1e1d42cb3d634a3a7f9fac99879c910b994dff9",
+        "url": "https://cdn.tse.jus.br/estatistica/sead/eleicoes/eleicoes2022/buweb/bweb_2t_MA_311020221535.zip"
+      },
+      {
+        "manifest": "manifests/2022-bu-bweb_2t_MG_311020221535.zip.json",
+        "sha256": "fd139fb63ea5cd06b9dc8854f77433cf02e62a8aacfa989881535cc37981781a",
+        "url": "https://cdn.tse.jus.br/estatistica/sead/eleicoes/eleicoes2022/buweb/bweb_2t_MG_311020221535.zip"
+      },
+      {
+        "manifest": "manifests/2022-bu-bweb_2t_MS_311020221535.zip.json",
+        "sha256": "d979e0a0ca91948d9672c87354bf92d88da948fd4e065d5fe38662a52d3572f2",
+        "url": "https://cdn.tse.jus.br/estatistica/sead/eleicoes/eleicoes2022/buweb/bweb_2t_MS_311020221535.zip"
+      },
+      {
+        "manifest": "manifests/2022-bu-bweb_2t_MT_311020221535.zip.json",
+        "sha256": "1db6887cc30124724be3cd75fdd2d923f78545e4cd0f1bd3fbb2b7c2f80dbef2",
+        "url": "https://cdn.tse.jus.br/estatistica/sead/eleicoes/eleicoes2022/buweb/bweb_2t_MT_311020221535.zip"
+      },
+      {
+        "manifest": "manifests/2022-bu-bweb_2t_PA_311020221535.zip.json",
+        "sha256": "f8de600ece5af4a456f79e8116172e8340d4147163eb1dcb59a6bebb3d31ab65",
+        "url": "https://cdn.tse.jus.br/estatistica/sead/eleicoes/eleicoes2022/buweb/bweb_2t_PA_311020221535.zip"
+      },
+      {
+        "manifest": "manifests/2022-bu-bweb_2t_PB_311020221535.zip.json",
+        "sha256": "43db324f0166f28a6863c481a55136cb1e5c571da44c2d85069711d5f3166eac",
+        "url": "https://cdn.tse.jus.br/estatistica/sead/eleicoes/eleicoes2022/buweb/bweb_2t_PB_311020221535.zip"
+      },
+      {
+        "manifest": "manifests/2022-bu-bweb_2t_PE_311020221535.zip.json",
+        "sha256": "023aa5a0584bfd89023803a7823e2bf2a56ed839713aed4dbe3d5572201ea9b4",
+        "url": "https://cdn.tse.jus.br/estatistica/sead/eleicoes/eleicoes2022/buweb/bweb_2t_PE_311020221535.zip"
+      },
+      {
+        "manifest": "manifests/2022-bu-bweb_2t_PI_311020221535.zip.json",
+        "sha256": "f85d2b5348ab32c12df92496fdd2c87609ec1191439c238f7f105bcdc87be540",
+        "url": "https://cdn.tse.jus.br/estatistica/sead/eleicoes/eleicoes2022/buweb/bweb_2t_PI_311020221535.zip"
+      },
+      {
+        "manifest": "manifests/2022-bu-bweb_2t_PR_311020221535.zip.json",
+        "sha256": "a6324ed276d1d4e49ad4814b5f6a649df57a2ee520ec53822a5fa29f600ba9b3",
+        "url": "https://cdn.tse.jus.br/estatistica/sead/eleicoes/eleicoes2022/buweb/bweb_2t_PR_311020221535.zip"
+      },
+      {
+        "manifest": "manifests/2022-bu-bweb_2t_RJ_311020221535.zip.json",
+        "sha256": "9dd10ef9599d37dda023b8c2353065352fc4b2d744b804348ae97a6d9a255b44",
+        "url": "https://cdn.tse.jus.br/estatistica/sead/eleicoes/eleicoes2022/buweb/bweb_2t_RJ_311020221535.zip"
+      },
+      {
+        "manifest": "manifests/2022-bu-bweb_2t_RN_311020221535.zip.json",
+        "sha256": "b3aad33d132cdb0ef963c99117d4578161eb37e1d608dbf93aede538b9d440ab",
+        "url": "https://cdn.tse.jus.br/estatistica/sead/eleicoes/eleicoes2022/buweb/bweb_2t_RN_311020221535.zip"
+      },
+      {
+        "manifest": "manifests/2022-bu-bweb_2t_RO_311020221535.zip.json",
+        "sha256": "2cedffb216d5de03227cf612ccba87a2a4cbf37b4bf7cdcc6efaf9cb83e34b0a",
+        "url": "https://cdn.tse.jus.br/estatistica/sead/eleicoes/eleicoes2022/buweb/bweb_2t_RO_311020221535.zip"
+      },
+      {
+        "manifest": "manifests/2022-bu-bweb_2t_RR_311020221535.zip.json",
+        "sha256": "d3681e90acf0711704525ea5efc3f56955bcfb8638c9f6de54a4830e40304cd5",
+        "url": "https://cdn.tse.jus.br/estatistica/sead/eleicoes/eleicoes2022/buweb/bweb_2t_RR_311020221535.zip"
+      },
+      {
+        "manifest": "manifests/2022-bu-bweb_2t_RS_311020221535.zip.json",
+        "sha256": "6870c7f4666ae12959e96cb95b3dbe6ea0b10b8b36130510cd3a843cfa09a599",
+        "url": "https://cdn.tse.jus.br/estatistica/sead/eleicoes/eleicoes2022/buweb/bweb_2t_RS_311020221535.zip"
+      },
+      {
+        "manifest": "manifests/2022-bu-bweb_2t_SC_311020221535.zip.json",
+        "sha256": "cf67057ad095817a1c4bb30ef1cb9349bd0843a5f6bfd29a26aa21ee7c719c16",
+        "url": "https://cdn.tse.jus.br/estatistica/sead/eleicoes/eleicoes2022/buweb/bweb_2t_SC_311020221535.zip"
+      },
+      {
+        "manifest": "manifests/2022-bu-bweb_2t_SE_311020221535.zip.json",
+        "sha256": "6906894047561b842ec3f22556c00acfcedb66d1e79a6de7633d3407dfe32fd9",
+        "url": "https://cdn.tse.jus.br/estatistica/sead/eleicoes/eleicoes2022/buweb/bweb_2t_SE_311020221535.zip"
+      },
+      {
+        "manifest": "manifests/2022-bu-bweb_2t_SP_311020221535.zip.json",
+        "sha256": "6a36f44f7cc7712b8ce251066830cf3e574af74e110833e6e56c9e96e6001125",
+        "url": "https://cdn.tse.jus.br/estatistica/sead/eleicoes/eleicoes2022/buweb/bweb_2t_SP_311020221535.zip"
+      },
+      {
+        "manifest": "manifests/2022-bu-bweb_2t_TO_311020221535.zip.json",
+        "sha256": "f1832b3b5a8a15a6fa55bcdf115f12177abd924dd0f99be2776fee7ed60399c1",
+        "url": "https://cdn.tse.jus.br/estatistica/sead/eleicoes/eleicoes2022/buweb/bweb_2t_TO_311020221535.zip"
+      },
+      {
+        "manifest": "manifests/2022-bu-bweb_2t_ZZ_311020221535.zip.json",
+        "sha256": "7be450456258a2f0f106b09010fb5b41aafca229373d4d4d3357662a65bcb789",
+        "url": "https://cdn.tse.jus.br/estatistica/sead/eleicoes/eleicoes2022/buweb/bweb_2t_ZZ_311020221535.zip"
+      }
+    ],
+    "order_sha256": "80e5806461ed62d6daa5285b011a57d2d438117506a02961f01265c8e9df7e25",
+    "universe_sha256": "05d3eef79a20d8b18276e294637d0422e188aab75424edf6cdfd768583b6013e",
+    "runtime_audit": {
+      "usable": true,
+      "coverage": 1.0,
+      "duplicate_sections": 0,
+      "unmatched_order_sections": 0,
+      "invalid_timestamps": 0,
+      "timestamp_meaning": "reception",
+      "tied_sections": 470413,
+      "first_timestamp": "2022-10-30 01:20:48",
+      "last_timestamp": "2022-10-31 00:17:31",
+      "limitation": "Reception order is not necessarily the order of official totalization."
+    }
+  },
+  "current_sha256": "47350358724a161cd55079071e0a052ab5674800b9b821eafcf49dc1782fdbdd",
+  "reference_sha256": "69a757e6cb9869dcb62913d4689a129899d3f1b26a98f585efe7f4f4dce96ba4",
+  "study": {
+    "version": 3,
+    "evaluation_years": [
+      2018,
+      2022,
+      2026
+    ],
+    "office": "Presidente",
+    "turn": 2,
+    "progress_unit": "sections_in_dataset",
+    "smoke_milestones": [
+      0.01,
+      0.02,
+      0.05,
+      0.1,
+      1.0
+    ],
+    "convergence_thresholds_pp": [
+      1.0,
+      0.5,
+      0.25
+    ],
+    "recommended_experiment_grid_step": 0.01,
+    "reference_policy": "same_year_first_round",
+    "reference_turn": 1,
+    "reference_preference": "A1 / (A1 + B1)",
+    "reference_volume": "all_first_round_valid_votes",
+    "archive_policy": "Keep earlier datasets and runs; they are not evaluation elections."
+  },
+  "reference_provenance": {
+    "status": "complete",
+    "year": 2022,
+    "turn": 1,
+    "candidate_a": "13",
+    "candidate_b": "22",
+    "source_file": "raw/2022/votes/votacao_secao_2022_BR.zip",
+    "source_sha256": "9353993de5cf03778aef44e01d4925e7ee105f5262491d344a2f0dbc956b0139",
+    "reference_sha256": "69a757e6cb9869dcb62913d4689a129899d3f1b26a98f585efe7f4f4dce96ba4",
+    "sections": 472028,
+    "zero_valid_sections": 4,
+    "zero_finalist_sections": 4,
+    "votes_a": 57259504,
+    "votes_b": 51072345,
+    "votes_other": 9897870,
+    "valid_votes": 118229719,
+    "preference": "A1 / (A1 + B1), municipal; fallback if no finalist votes",
+    "volume": "All first-turn valid presidential votes, including eliminated candidates",
+    "parquet_bytes": 2367998
+  },
+  "elections_config": {
+    "2006": {
+      "reference": {
+        "year": 2006,
+        "turn": 1
+      },
+      "candidate_a": "13",
+      "candidate_b": "45",
+      "name_a": "Luiz Inácio Lula da Silva",
+      "name_b": "Geraldo Alckmin"
+    },
+    "2010": {
+      "reference": {
+        "year": 2010,
+        "turn": 1
+      },
+      "candidate_a": "13",
+      "candidate_b": "45",
+      "name_a": "Dilma Rousseff",
+      "name_b": "José Serra"
+    },
+    "2014": {
+      "reference": {
+        "year": 2014,
+        "turn": 1
+      },
+      "candidate_a": "13",
+      "candidate_b": "45",
+      "name_a": "Dilma Rousseff",
+      "name_b": "Aécio Neves"
+    },
+    "2018": {
+      "reference": {
+        "year": 2018,
+        "turn": 1
+      },
+      "candidate_a": "13",
+      "candidate_b": "17",
+      "name_a": "Fernando Haddad",
+      "name_b": "Jair Bolsonaro"
+    },
+    "2022": {
+      "reference": {
+        "year": 2022,
+        "turn": 1
+      },
+      "candidate_a": "13",
+      "candidate_b": "22",
+      "name_a": "Luiz Inácio Lula da Silva",
+      "name_b": "Jair Bolsonaro"
+    },
+    "2026": {
+      "reference": {
+        "year": 2026,
+        "turn": 1
+      },
+      "candidate_a": "13",
+      "candidate_b": "22",
+      "note": "Correspondência confirmada nos registros oficiais de segundo turno baixados; A = PT, B = outro finalista.",
+      "name_a": "Luiz Inácio Lula da Silva",
+      "name_b": "Flávio Nantes Bolsonaro"
+    }
+  },
+  "code_sha256": {
+    "__init__.py": "45d1862295277e4517026cff128a06ecf57e332191365b94f642285c99971b45",
+    "__main__.py": "79ee6f134c5c5193377cf9b189cbdcc3e2095e49ba9cec310114441c15a917c4",
+    "audit.py": "138a4f9e06b8652b0aa1041fa5a99b1e59cbf3a99a32e89a935ebe3ff3a652e5",
+    "cli.py": "2dcecc37cb8daf200acdc59a30c26f8869c377b40702244a28fc00332043a213",
+    "data.py": "59340c0fd0117bda8fc3cfb3c3dea51ad8bc5a78b454b8c216ca2470a7a9069c",
+    "didactic.py": "2f1649ceffc90016b490a98b65e2ecce839fa253fddf5ca4d1d5c0c265bcc4da",
+    "download.py": "9a3d1cff9a8ca4634aa4c72f0e10f7702495710554edf7ee3e27aa8cfd3be9cc",
+    "experiment.py": "ea3532b7151e07f0ecd94cc66d85ee9498e1058ad79c98c04dfc51cd6b779af1",
+    "models.py": "184cd9b0a369f04ef31559bfb0e5aeb098f0342486304b797e20e87996128b20",
+    "study.py": "47739f6eed45fd12af2bcb1385246d7a4ded9841ad54e60c10939aa8d01e3c90",
+    "timing.py": "67a0f958d7ba476e72234b895e8d50a7e5f748592a5416d742b7a5d4f3e14021",
+    "totalization.py": "e68b8016d204a90708a53d7d24baef460d8d0a6ee55872ce9c53092412574261"
+  },
+  "python": "3.11.15",
+  "packages": {
+    "torch": "2.12.0.dev20260407+cu128",
+    "numpy": "2.4.4",
+    "pandas": "3.0.3",
+    "pyarrow": "23.0.0",
+    "requests": "2.32.5"
+  },
+  "cuda": "12.8",
+  "gpu": null,
+  "calibration": "Fixed initial parameters, not optimized against target outcomes.",
+  "historical_alignment": "Same finalists, first turn to second turn of the same year; preference conditional on A+B, volume includes all valid first-turn votes."
+}

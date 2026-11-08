@@ -1,0 +1,15 @@
+{
+  "year": 2026,
+  "kind": "bu",
+  "url": "https://cdn.tse.jus.br/estatistica/sead/eleicoes/eleicoes2026/buweb/bweb_2t_PI_261020260742.zip",
+  "resource_name": "PI - Boletim de Urna - Segundo turno - 26.10.2026",
+  "resource_id": "2e89fb03-478f-43c8-97f6-3159b6dd7a79",
+  "path": "raw/2026/bu/bweb_2t_PI_261020260742.zip",
+  "status": "complete",
+  "retrieved_at": "2026-11-07T02:33:12.297801+00:00",
+  "expected_bytes": 2648710,
+  "etag": "\"286a86-65ebd15fdc335\"",
+  "last_modified": "Mon, 26 Oct 2026 12:01:11 GMT",
+  "bytes": 2648710,
+  "sha256": "d0fd3ff93cc97ef0e2ae35dc3e6a1a54ce73ad6b9e299cbf676d27007d1c38b3"
+}

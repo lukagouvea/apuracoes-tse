@@ -1,0 +1,39 @@
+{
+  "checked_at_utc": "2026-11-08T18:56:42.638191+00:00",
+  "status": "passed",
+  "method": "git checkout-index export; only staged files mounted as /workspace",
+  "tracked_files_before_this_record": 233,
+  "bytes_before_this_record": 17107812,
+  "html_pages": [
+    "reports/apuracao.html",
+    "reports/metodos.html",
+    "reports/convergencia.html",
+    "reports/projecoes.html"
+  ],
+  "clean_export_tests_passed": 59,
+  "clean_export_browser_checks_passed": 5,
+  "raw_tse_files_verified": 65,
+  "raw_dataset_in_git": false,
+  "environment_credentials_in_git": false,
+  "gpu_used": false,
+  "public_cpu_replay_rows": 927,
+  "max_public_cpu_share_difference": 0.0,
+  "public_dockerfile_built": false,
+  "files_sha256": {
+    "README.md": "acebc8e294139e06675e773e6fe08a5a22f51d91fe4f7cf14dc5e7563c599d04",
+    ".gitignore": "53744a5491201bb2a47fbe8ff48c1c07549b0f9f671441a522bc49df93387ef1",
+    ".gitattributes": "9e3b3615c656d288eb97f6fc642fbab3295d6061d09aeeac50b67b78c4c19574",
+    "Dockerfile.cpu": "e8f19124d7b43f33a11876e899b7bc822455fa235d19f3e631f0430b50a0c727",
+    "compose.cpu.yaml": "3e3cbc9bb2d170933bf46215ce926e74d59ecc6d41c3f5c8d487c69006602823",
+    "requirements-reproduce.txt": "49ed08e7b16be7d7434d842e779eef0997ac73db6fdc8adea9f206640116f6a2",
+    "requirements-torch-cpu.txt": "fe00538ad71f2f8a10f5118869c632b32384635eeaae443deb76e3aa7ce06f20",
+    "scripts/cpu.sh": "9b9df7719516d22a023e62670402d4e28b017ef84b37ebffc8aea25443e1acd4",
+    "scripts/container.sh": "4814fc9188ba02195b6828e15618e90f48db04ff4023f53693c2ac5fe3462680",
+    "scripts/dataset_snapshot.py": "2415574106c5841f099d201585a521e6d0ca251886944521935ff67248351ae1",
+    "scripts/reproduce.py": "5879147d993aad6fec06c2db4b58ca75f6cb97402fd4c3d74f7b5c684a864357"
+  },
+  "validation_log_sha256": {
+    "unit_and_data": "a6c777f7990aa2595adbb6f832ee3b39c4359dfa1b36eef631418105c2c9c3e8",
+    "browsers": "42d5d880b1df4a0cd0bc237aa4452f7c945a9a408989144d339c3e059412d02a"
+  }
+}

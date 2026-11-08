@@ -1,0 +1,10 @@
+* text=auto eol=lf
+*.pdf binary
+*.png binary
+*.parquet binary
+# Preserve exact bytes of archived public API responses.
+reports/mattecca-comparison-20261107/raw/** -text
+
+# Generated figures retain their original bytes; Markdown uses hard line breaks.
+reports/**/*.svg binary
+*.md whitespace=-blank-at-eol

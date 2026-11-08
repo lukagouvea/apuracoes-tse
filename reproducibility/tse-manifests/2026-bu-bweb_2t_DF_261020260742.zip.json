@@ -1,0 +1,15 @@
+{
+  "year": 2026,
+  "kind": "bu",
+  "url": "https://cdn.tse.jus.br/estatistica/sead/eleicoes/eleicoes2026/buweb/bweb_2t_DF_261020260742.zip",
+  "resource_name": "DF - Boletim de Urna - Segundo turno - 26.10.2026",
+  "resource_id": "81eede48-f4d7-4075-ad97-3858b8b2f920",
+  "path": "raw/2026/bu/bweb_2t_DF_261020260742.zip",
+  "status": "complete",
+  "retrieved_at": "2026-11-07T02:33:08.802068+00:00",
+  "expected_bytes": 3846786,
+  "etag": "\"3ab282-65ebd113cf6da\"",
+  "last_modified": "Mon, 26 Oct 2026 11:59:51 GMT",
+  "bytes": 3846786,
+  "sha256": "da7ea3674e771acc7a7780ba7220f82d1c88458186c6a6e86df71e7e425ce2d4"
+}

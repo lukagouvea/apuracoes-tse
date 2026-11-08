@@ -1,0 +1,15 @@
+{
+  "year": 2022,
+  "kind": "bu",
+  "url": "https://cdn.tse.jus.br/estatistica/sead/eleicoes/eleicoes2022/buweb/bweb_2t_RO_311020221535.zip",
+  "resource_name": "RO - Boletim de Urna - Segundo turno - 31.10.2022",
+  "resource_id": "69395461-5e0a-4957-b753-c3591b8f0bb7",
+  "path": "raw/2022/bu/bweb_2t_RO_311020221535.zip",
+  "status": "complete",
+  "retrieved_at": "2026-11-07T02:39:57.589703+00:00",
+  "expected_bytes": 959055,
+  "etag": "\"ea24f-5ec594fb65182\"",
+  "last_modified": "Mon, 31 Oct 2022 19:06:57 GMT",
+  "bytes": 959055,
+  "sha256": "2cedffb216d5de03227cf612ccba87a2a4cbf37b4bf7cdcc6efaf9cb83e34b0a"
+}

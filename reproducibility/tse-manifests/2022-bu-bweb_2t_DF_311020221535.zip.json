@@ -1,0 +1,15 @@
+{
+  "year": 2022,
+  "kind": "bu",
+  "url": "https://cdn.tse.jus.br/estatistica/sead/eleicoes/eleicoes2022/buweb/bweb_2t_DF_311020221535.zip",
+  "resource_name": "DF - Boletim de Urna - Segundo turno - 31.10.2022",
+  "resource_id": "5649a238-1d7e-428b-8163-1d02cca9a837",
+  "path": "raw/2022/bu/bweb_2t_DF_311020221535.zip",
+  "status": "complete",
+  "retrieved_at": "2026-11-07T02:39:53.328116+00:00",
+  "expected_bytes": 998403,
+  "etag": "\"f3c03-5ec594fa3ee68\"",
+  "last_modified": "Mon, 31 Oct 2022 19:06:55 GMT",
+  "bytes": 998403,
+  "sha256": "373b91674c437468494eeeff041d1b00760a27424b7c1094a791f1f0ef308965"
+}
