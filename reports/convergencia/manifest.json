@@ -44,14 +44,14 @@
   },
   "source_code": {
     "/workspace/scripts/build_convergencia.py": "b3f1a9ff090a9930b1e74f5ef4d6e135e195d7bc72775538d2637de3d32c220c",
-    "templates/convergencia.html": "fb6213ec64bdc891f5faba3e98ce01758fa5469e09c288fb5ffece7d07f9491f",
+    "templates/convergencia.html": "dd5bd597e4f1d1ecaf0540d0c58f570abc3ef67bd4fd70f530b1d0a9576b92e2",
     "src/projecao/results.py": "a446b4ff5d3d7fd43f6f954448803ccfdee71744ae5a2793d76e1ea8d8b1dd20",
     "src/projecao/models.py": "184cd9b0a369f04ef31559bfb0e5aeb098f0342486304b797e20e87996128b20",
     "src/projecao/study.py": "47739f6eed45fd12af2bcb1385246d7a4ded9841ad54e60c10939aa8d01e3c90",
     "configs/study.json": "630c1554865433d5002c3fbbe51fe5d399e82b1b504a25de92d980e1c68400bc"
   },
   "artifacts": {
-    "reports/convergencia.html": "665b755791f391a0befa4d0464a0453e440f9c5b806c01984d00c47de7514b25",
+    "reports/convergencia.html": "58d14fd761445ddaaa5b92a2837a190174ccedfa7a6d39cf3bf1a2391847ffa9",
     "reports/convergencia/series.json": "e5674de671fa093b23c5b717e1d80f69fb750f448ef2647d6906fe8d47bc1fd7",
     "reports/convergencia/marcos.csv": "4a328e9f86fe977767986351ba1fcaae6f78b2230e0e7b16892320e7c2f5c567",
     "reports/convergencia/marcos.parquet": "1f32ed1842c5c43f53e37cb7274eba77fe245bc1c8bc0af84cb9ca4e2acc1045",

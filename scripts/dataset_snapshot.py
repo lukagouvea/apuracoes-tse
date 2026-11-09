@@ -3,33 +3,48 @@ import argparse
 import hashlib
 import json
 from pathlib import Path
-import shutil
 
-SNAPSHOT = Path(__file__).resolve().parents[1] / 'reproducibility/tse-manifests'
+SNAPSHOT = Path(__file__).resolve().parents[1] / 'reproducibility/tse-snapshot.json'
+
+
+def manifest_texts(source):
+    source = Path(source)
+    if source.is_file():
+        bundle = json.loads(source.read_text())
+        if bundle.get('format_version') != 1 or not isinstance(bundle.get('manifests'), dict):
+            raise ValueError('Invalid consolidated snapshot')
+        result = {}
+        for name, record in bundle['manifests'].items():
+            if not isinstance(name, str) or '/' in name or '\\' in name or not name.endswith('.json') or not isinstance(record, dict):
+                raise ValueError('Invalid manifest filename or record')
+            result[name] = json.dumps(record, ensure_ascii=False, indent=2) + '\n'
+    else:
+        result = {file.name: file.read_text() for file in sorted(source.glob('*.json'))}
+    if not result: raise ValueError('No frozen manifests found')
+    return result
 
 
 def seed(root, source=SNAPSHOT):
-    files = sorted(Path(source).glob('*.json'))
-    if not files: raise ValueError('No frozen manifests found')
+    files = manifest_texts(source)
     dest = Path(root) / 'manifests'; dest.mkdir(parents=True, exist_ok=True)
     # Check all collisions before writing any file.
-    for file in files:
-        target = dest / file.name
-        if target.exists() and target.read_bytes() != file.read_bytes():
+    for name, text in files.items():
+        target = dest / name
+        if target.exists() and target.read_text() != text:
             raise ValueError(f'Existing manifest differs: {target}; seed only a new dataset directory')
-    for file in files:
-        target = dest / file.name
-        if not target.exists(): shutil.copyfile(file, target)
+    for name, text in files.items():
+        target = dest / name
+        if not target.exists(): target.write_text(text)
     return len(files)
 
 
 def verify(root, source=SNAPSHOT):
     root = Path(root).resolve(); checked = 0; failures = []; total = 0
-    for file in sorted(Path(source).glob('*.json')):
-        record = json.loads(file.read_text())
+    for name, text in manifest_texts(source).items():
+        record = json.loads(text)
         if not isinstance(record, dict) or record.get('status') != 'complete' or 'path' not in record: continue
         raw = (root / record['path']).resolve()
-        if not raw.is_relative_to(root): raise ValueError(f'Unsafe raw-data path in {file.name}')
+        if not raw.is_relative_to(root): raise ValueError(f'Unsafe raw-data path in {name}')
         checked += 1; total += record['bytes']
         if not raw.is_file(): reason = 'missing'
         elif raw.stat().st_size != record['bytes']: reason = 'size_mismatch'

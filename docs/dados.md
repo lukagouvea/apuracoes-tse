@@ -232,7 +232,7 @@ votes = pd.read_parquet(
 print(sections.groupby('uf')[['votes_a', 'votes_b']].sum())
 
 # Consultar uma execução já produzida.
-projections = pd.read_parquet('/workspace/reports/historical-2026/projections.parquet')
+projections = pd.read_parquet('/workspace/reports/cpu-study-20261107/grid-2026/projections.parquet')
 print(projections[['method', 'fraction_sections', 'share_a', 'error_pp']])
 ```
 
@@ -293,7 +293,7 @@ A tabela extraída do PDF nacional usa os campos de `curves.parquet`, antes de a
 
 Cinco observações documentais nacionais, com fonte e precisão preservadas. `publication_timestamp` registra o horário da notícia. `totalization_timestamp` permanece desconhecido. `votes_a` e `votes_b` são inteiros anuláveis: os valores arredondados em milhões não são convertidos em contagens exatas. `urns_percent_reported` é o percentual de urnas publicado, sem conversão para contagem de seções. `percent_a_reported`, `percent_b_reported`, `vote_count_precision`, `source_url` e os textos publicados documentam cada observação.
 
-Esse arquivo não alimenta o replay histórico e não é interpolado em uma curva completa. Consulte a [pesquisa de fontes](pesquisa-cronologia.md) para os registros e suas limitações.
+Esse arquivo não alimenta o replay histórico e não é interpolado em uma curva completa. Os registros da pesquisa de fontes permanecem no acervo local fora do Git.
 
 ## 11. Escopo do estudo e exemplos didáticos
 
@@ -345,4 +345,4 @@ A exportação CSV feita pelo navegador inclui os nomes dos candidatos e percent
 
 `replicas.parquet` contém 185.400 linhas: `year`, `point_index`, `method`, `replicate` (índice 0–199) e `share_a` (float64, 0 a 1). Permite conferir os quantis sem executar novamente o bootstrap. `cobertura.csv` registra, por ano/método/recorte, quantidade de pontos, quantos intervalos contêm o final e largura mediana em p.p. Essa cobertura foi baixa e não foi usada para modificar limites.
 
-`bootstrap-<ano>.json` conserva protocolo/hashes e os resultados por prefixo observado. `series.json` contém o payload do HTML. `manifest.json`, `resources.json` e `verification.json` registram proveniência, uso exclusivo de CPU e auditoria independente dos 927 quantis, pontos e endpoints. A ampliação para 2018 preserva hashes dos caches e linhas CSV anteriores em `before-2018.json`; a auditoria confere que 2022/2026 não mudaram. O CSV exportado pelo navegador traz 1.854 registros, dois por ponto/modelo, nomes dos candidatos e percentuais `_pct` de 0 a 100.
+`series.json` contém o payload do HTML. `manifest.json` e `resources.json` registram proveniência e uso exclusivo de CPU. `scripts/check_projecoes.py` audita os 927 quantis diretamente das réplicas, os pontos originais e endpoints; o relatório gerado `verification.json` fica fora do Git. Os caches `bootstrap-<ano>.json` são auxiliares locais para recomputação e não são necessários para abrir ou conferir os resultados. O CSV exportado pelo navegador traz 1.854 registros, dois por ponto/modelo, nomes dos candidatos e percentuais `_pct` de 0 a 100.

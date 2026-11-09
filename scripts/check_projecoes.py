@@ -4,8 +4,6 @@ from pathlib import Path
 import numpy as np
 import pandas as pd
 from projecao.download import atomic_json, sha256
-import csv as csv_module
-import hashlib
 
 folder = Path('reports/projecoes')
 payload = json.loads((folder / 'series.json').read_text())
@@ -58,18 +56,11 @@ for row in coverage.itertuples():
     assert row.covered == int(((selected.lower_a <= selected.final_a) & (selected.upper_a >= selected.final_a)).sum())
 resources = json.loads((folder / 'resources.json').read_text())
 assert resources['device'] == 'cpu' and resources['cuda_initialized'] is False and resources['gpu_exposed'] is False
-baseline = json.loads((folder / 'before-2018.json').read_text())
-for name, digest in baseline['cached_sha256'].items(): assert sha256(folder / name) == digest, name
-raw_rows = list(csv_module.DictReader((folder / 'intervalos.csv').open()))
-for year, digest in baseline['csv_rows_sha256'].items():
-    selected = [row for row in raw_rows if row['year'] == year]
-    assert len(selected) == baseline['rows_per_year'][year]
-    assert hashlib.sha256(json.dumps(selected, sort_keys=True, separators=(',', ':')).encode()).hexdigest() == digest
 result = {'status': 'passed', 'intervals': len(table), 'replicates': len(replicas),
           'quantiles_independently_verified': len(quantiles), 'original_points_preserved': True,
           'csv_parquet_equal': True, 'same_year_first_turn_reference': True,
           'endpoint_collapsed': True, 'coverage_counts_verified': True, 'calibrated': False,
-          'gpu_used': False, 'years': payload['years'], 'reused_2022_2026_unchanged': True,
+          'gpu_used': False, 'years': payload['years'],
           'chronology_2018': 'first_totalization_reconstruction_with_final_votes', 'sha256': manifest['artifacts']}
 atomic_json(folder / 'verification.json', result)
 print(json.dumps({k: v for k, v in result.items() if k != 'sha256'}))

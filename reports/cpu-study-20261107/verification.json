@@ -1,9 +1,0 @@
-{
-  "status": "passed",
-  "model_projections": 927,
-  "baseline_snapshots": 309,
-  "sustained_convergence_checks": 36,
-  "archived_cuda_comparisons": 45,
-  "gpu_used": false,
-  "hashes_verified": true
-}

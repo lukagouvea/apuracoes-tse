@@ -14,7 +14,7 @@ Referências finais de Lula: **2022 = 50,902405%**; **2026 = 51,785183%**. Não 
 
 ## Erro nos marcos publicados e alinhados
 
-Valores em pontos percentuais. As linhas identificam os marcos pedidos; a porcentagem efetivamente disponível pode ser maior. As projeções de Lula e os valores sem arredondamento estão em `comparison.csv`/Parquet.
+Valores em pontos percentuais. As linhas identificam os marcos pedidos; a porcentagem efetivamente disponível pode ser maior. As projeções de Lula e os valores sem arredondamento estão em `comparison.csv`.
 
 | Ano | Marco nominal | Seções Mattecca (%) | Seções nossas (%) | Pós-estratificação | Swing | Hierárquico | Mattecca |
 |---|---:|---:|---:|---:|---:|---:|---:|
@@ -54,8 +54,6 @@ Os números de 2026 apresentados neste relatório descrevem a curva atualmente d
 - As densidades das grades também diferem. A variação entre pontos não foi usada para ranquear estabilidade entre fontes com frequências distintas. Nossos modelos não produzem os intervalos de incerteza publicados por eles.
 - Uma comparação experimental controlada exige executar ambos os modelos sobre exatamente os mesmos snapshots, com o mesmo resultado final e protocolo de calibração. Esta comparação pública não fornece isso.
 
-## Arquivos e reprodução
+## Arquivos preservados
 
-`sources.json` registra URLs, horário de consulta e hashes das respostas originais em `raw/`. `cpu-aligned-<ano>` contém os novos replays CPU, sem apagar a grade original. `milestones.csv`, `comparison.csv`/Parquet e `convergence.csv` preservam os números. `summary.json` registra as métricas e hashes; `verification.json` registra a conferência independente com `verify.py`.
-
-Reprodução: executar `run_aligned.py`, `compare.py` e `verify.py`, nessa ordem, a partir da raiz do projeto, no ambiente Docker descrito no README. Os dois primeiros reutilizam os arquivos de `raw/` e a grade original; não consultam uma API mutável. Utilizar CPU, runtime `runc`, duas threads, sem expor dispositivos NVIDIA e com o dataset montado somente para leitura.
+Este complemento mantém `comparison.md`, `comparison.csv` e `comparison.png`. As respostas originais da API, scripts e replays alinhados foram arquivados localmente fora do Git na redução do projeto; também permanecem no commit inicial. A reprodução principal dos três métodos está descrita no [README](../../README.md). Este subconjunto preserva a comparação já realizada, sem fornecer sua reprodução independente completa.

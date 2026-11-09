@@ -23,7 +23,7 @@ flowchart LR
     class E18,E22,E26 evaluation
 ```
 
-Os três anos têm ordem por seção auditada com cobertura integral do universo baixado, permitindo testar os modelos com o mesmo avanço da apuração. 2006, 2010 e 2014 ficam somente no acervo e não alimentam os estimadores. Execuções que usaram eleições anteriores como referência estão identificadas como descartadas no [índice de resultados antigos](../reports/legacy-methodology.md). A indisponibilidade de cronologia territorial de 2010/2014 deixa de bloquear este recorte.
+Os três anos têm ordem por seção auditada com cobertura integral do universo baixado, permitindo testar os modelos com o mesmo avanço da apuração. 2006, 2010 e 2014 ficam somente no acervo e não alimentam os estimadores. Execuções que usaram eleições anteriores como referência estão identificadas como descartadas no acervo local fora do Git. A indisponibilidade de cronologia territorial de 2010/2014 deixa de bloquear este recorte.
 
 O escopo executável está em [`configs/study.json`](../configs/study.json); as referências e os finalistas estão em [`configs/elections.json`](../configs/elections.json). CLI e API de experimentos recusam anos fora de 2018/2022/2026. Download e preparação continuam permitindo os anos do acervo, inclusive 2014.
 
@@ -126,7 +126,7 @@ Cada nova execução registra a configuração `study`, ano, turno alvo (2), tur
 
 As validações em `reports/first-turn-reference-<ano>` usam 1%, 2%, 5%, 10% e 100%, com referência no primeiro turno e ordem histórica do segundo turno. Resultados das configurações anteriores não integram esta metodologia.
 
-A [primeira análise em CPU](../reports/cpu-study-20261107/analysis.md) já executou os três pleitos com parâmetros fixos: 0,1%, 0,2%, 0,5% e depois 1% a 100%, passo de 1 p.p. São 103 snapshots por método e ano, 927 projeções, mais a parcial simples nos mesmos snapshots. O relatório contém erros, convergência nos três limiares, gráficos e registros de recursos. É uma comparação descritiva inicial; calibração e análises de sensibilidade permanecem separadas. Consulte também o [inventário medido](../reports/validation.md) e o [dicionário dos Parquets](dados.md).
+A [primeira análise em CPU](../index.html#resultados) já executou os três pleitos com parâmetros fixos: 0,1%, 0,2%, 0,5% e depois 1% a 100%, passo de 1 p.p. São 103 snapshots por método e ano, 927 projeções, mais a parcial simples nos mesmos snapshots. O painel apresenta erros, convergência e gráficos; os metadados das execuções ficam junto dos Parquets. É uma comparação descritiva inicial; calibração e análises de sensibilidade permanecem separadas. Consulte também as [instruções de reprodução](../index.html#reproduzir) e o [dicionário dos Parquets](dados.md).
 
 ## 8. Faixas experimentais de reamostragem
 

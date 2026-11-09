@@ -12,7 +12,7 @@ O modelo recebe somente os votos revelados até cada snapshot. O final fica no a
 
 ## Abrir as páginas prontas
 
-Os quatro HTMLs estão no Git e funcionam offline. Abra-os diretamente no navegador, sem instalar Python nem baixar os dados.
+Abra [index.html](index.html), a página central do experimento, com acesso aos resultados, explicação dos métodos, implementação e reprodução. Ela e as quatro páginas abaixo funcionam offline, sem instalar Python nem baixar os dados.
 
 | Página | Conteúdo |
 |---|---|
@@ -33,14 +33,14 @@ src/projecao/            # Download, preparação, auditoria e modelos
 scripts/                 # Ambiente, reprodução e geradores dos HTMLs
 tests/                   # Testes automatizados
 templates/               # Fontes das páginas
-reproducibility/         # Catálogos, hashes e evidências do ambiente CPU
+reproducibility/         # Snapshot único com catálogos e hashes dos dados
 reports/                 # Páginas e resultados selecionados
 docs/                    # Metodologia, esquemas e especificação
 ```
 
-Entram código, configurações, testes, documentação, propostas originais, os quatro HTMLs e os arquivos que sustentam suas curvas. Os Parquets pequenos de **resultados** e as respostas públicas usadas na comparação com Mattecca também são preservados.
+Entram código, configurações, testes, três documentos técnicos, propostas originais, a página central, os quatro painéis e os arquivos que sustentam suas curvas. Os Parquets pequenos de **resultados** permitem conferir os números sem baixar novamente o dataset. Da comparação complementar com Mattecca, ficam o relatório, a figura e o CSV.
 
-Os **ZIPs e Parquets de entrada do TSE**, imagens Docker, ambientes Python, `.env`, capturas de QA e execuções antigas descartadas ficam fora do Git. Novas execuções podem ser gravadas em `reports/runs/`, que é ignorado.
+Os **ZIPs e Parquets de entrada do TSE**, imagens Docker, ambientes Python, `.env`, capturas de QA e execuções antigas descartadas ficam fora do Git. Arquivos auxiliares retirados nesta organização foram preservados localmente em .local-archive/2026-11-09-reduction/, fora do Git; o commit inicial também conserva o acervo anterior. Novas execuções podem ser gravadas em `reports/runs/`, que é ignorado.
 
 ## 1. Preparar o ambiente CPU
 
@@ -55,7 +55,7 @@ cp .env.example .env
 ./scripts/cpu.sh --read-only -m unittest discover -s tests -v
 ```
 
-[Dockerfile.cpu](Dockerfile.cpu) fixa a imagem Python por digest. [requirements-reproduce.txt](requirements-reproduce.txt) fixa as dependências; [requirements-torch-cpu.txt](requirements-torch-cpu.txt) contém URL e SHA-256 do wheel oficial do Torch CPU. A [validação numérica](reproducibility/cpu-validation.json) registra o teste desse wheel contra as projeções originais.
+[Dockerfile.cpu](Dockerfile.cpu) fixa a imagem Python por digest. [requirements-reproduce.txt](requirements-reproduce.txt) fixa as dependências; [requirements-torch-cpu.txt](requirements-torch-cpu.txt) contém URL e SHA-256 do wheel oficial do Torch CPU. Esse wheel foi validado com os 59 testes existentes na montagem do ambiente e com as 927 projeções, sem diferença numérica em relação às originais. A construção completa do Dockerfile CPU ainda não foi executada nesta máquina.
 
 [compose.cpu.yaml](compose.cpu.yaml) usa `runc`, não expõe GPU e limita os replays a duas CPUs, duas threads e 2 GiB de RAM. A preparação no serviço `tools` tem limite de 6 GiB de RAM e 8 GiB contando swap; recomenda-se uma máquina com pelo menos 8 GiB de RAM para essa etapa. O serviço `experiment` mantém o limite de 2 GiB. O wrapper aplica seu UID/GID. Dentro do container, o projeto está em `/workspace` e o dataset em `/data/tse`.
 
@@ -85,7 +85,7 @@ Em uma pasta de dataset **nova**, copie primeiro os catálogos congelados para u
 ./scripts/cpu.sh --read-only scripts/dataset_snapshot.py verify
 ```
 
-Os [manifestos congelados](reproducibility/tse-manifests/) registram URLs, nomes, datas, tamanhos e SHA-256. As fontes são `dadosabertos.tse.jus.br` e `cdn.tse.jus.br`. O download passa por `.part`, verifica tamanho/formato/hash e reaproveita arquivos completos conferidos.
+O [snapshot consolidado](reproducibility/tse-snapshot.json) preserva os 70 registros originais de catálogos e manifestos, com URLs, nomes, datas, tamanhos e SHA-256. As fontes são `dadosabertos.tse.jus.br` e `cdn.tse.jus.br`. O download passa por `.part`, verifica tamanho/formato/hash e reaproveita arquivos completos conferidos.
 
 2018 não tem um ZIP de histórico nacional selecionado pelo catálogo; o comando pode informar essa indisponibilidade, pois sua curva usa o detalhe por seção. Se `verify` apontar diferença de hash, a fonte recebida mudou: preserve essa informação e não a trate como a mesma base dos resultados registrados.
 
@@ -184,6 +184,8 @@ O [guia interativo](reports/metodos.html) explica os mecanismos com 858 estados 
 
 ## 6. Regenerar as páginas
 
+A página central usa apenas arquivos do repositório: `python3 scripts/build_index.py`. Regere-a depois de atualizar resultados, configuração ou código dos modelos.
+
 Os comandos usam dados auditados ou resultados registrados. Sobrescrevem as páginas e arquivos correspondentes; confira as alterações com Git.
 
 ```bash
@@ -226,7 +228,6 @@ docker image inspect sha256:bddd3bf9b9e44eee13044ba2afe85a757c1e5009e94bfba5701f
 ```bash
 ./scripts/cpu.sh --read-only -m unittest discover -s tests -v
 ./scripts/cpu.sh --read-only scripts/check_projecoes.py
-./scripts/cpu.sh --read-only reports/mattecca-comparison-20261107/verify.py
 ```
 
 Os testes cobrem dados, referências, fallback, seções sem válidos, matrizes singulares, ordem auditada, ausência de vazamento, endpoints e refits. As auditorias usam os Parquets e hashes registrados.
@@ -235,6 +236,7 @@ QA de navegador é opcional: exige Node.js, **Playwright 1.62.1** e Google Chrom
 
 ```bash
 npm install --no-save --package-lock=false playwright@1.62.1
+node scripts/check_index.cjs
 node scripts/check_metodos.cjs
 node scripts/check_visuals.cjs --html-only
 node scripts/check_convergencia.cjs
@@ -242,9 +244,9 @@ node scripts/check_projecoes.cjs
 node scripts/check_projecoes_tooltip.cjs
 ```
 
-- [Portal do TSE](https://dadosabertos.tse.jus.br/) e [manifestos congelados](reproducibility/tse-manifests/).
+- [Portal do TSE](https://dadosabertos.tse.jus.br/) e [snapshot consolidado](reproducibility/tse-snapshot.json).
 - [Instalações oficiais anteriores do PyTorch](https://pytorch.org/get-started/previous-versions/), origem do ambiente CPU público.
-- [Primeira análise CPU](reports/cpu-study-20261107/analysis.md) e [inventário](reports/validation.md).
+- [Resultados em CPU](reports/convergencia.html) e [dicionário dos dados](docs/dados.md).
 - [Comparação com Mattecca, 2022/2026](reports/mattecca-comparison-20261107/comparison.md): descritiva, com bases/grades diferentes e ressalva sobre horários de 2026.
-- [Pesquisa da cronologia](docs/pesquisa-cronologia.md), [proposta original](proposta_projeto.pdf) e [guia técnico](guia_tecnico.pdf).
+- [Metodologia e cronologia](docs/metodologia.md), [proposta original](proposta_projeto.pdf) e [guia técnico](guia_tecnico.pdf).
 - [Projeto de João Gallo](https://github.com/joaogallo/projecao-apuracao-eleicoes): referência conceitual; os modelos deste repositório são uma implementação própria.

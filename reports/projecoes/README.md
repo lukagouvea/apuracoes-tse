@@ -12,12 +12,11 @@ O resultado final não entra na função que calcula as faixas. `cobertura.csv` 
 
 - `intervalos.csv`/Parquet: 927 intervalos, pontos, parciais, finais de avaliação, seeds e percentuais efetivos.
 - `replicas.parquet`: valores das 200 réplicas por intervalo, para conferir os quantis.
-- `bootstrap-<ano>.json`: cache reproduzível dos prefixos observados, protocolo e hashes.
+- `bootstrap-<ano>.json`: cache auxiliar local, fora do Git; dispensável para abrir o painel ou auditar quantis.
 - `series.json`: dados incorporados no HTML.
 - `manifest.json`: hashes de dados, código e artefatos.
 - `resources.json`: consumo CPU e confirmação de CUDA não inicializado.
-- `before-2018.json`: hashes dos caches e das linhas CSV de 2022/2026 antes da ampliação, conferidos na auditoria para garantir que os resultados foram reaproveitados sem alteração.
 
-Geração: `scripts/build_projecoes.py`, no container CPU com o SSD somente para leitura. `--compute-only` calcula; `--render-only` recria apenas o HTML. Os anos vêm de `configs/study.json`. A configuração padrão usa 200 réplicas, seed base 42 e duas threads. São 185.400 réplicas. A inclusão de 2018 calculou somente seus 309 intervalos, reaproveitando os 618 de 2022/2026. As execuções originais não são reescritas.
+Geração: `scripts/build_projecoes.py`, no container CPU com o SSD somente para leitura. `--compute-only` calcula; `--render-only` recria apenas o HTML. Os anos vêm de `configs/study.json`. A configuração padrão usa 200 réplicas, seed base 42 e duas threads. São 185.400 réplicas. As projeções originais permanecem nos Parquets da grade CPU. A auditoria `scripts/check_projecoes.py` confere os pontos e calcula os quantis independentemente a partir das réplicas preservadas.
 
 Base estatística: [Rubin (1981), The Bayesian Bootstrap](https://people.eecs.berkeley.edu/~jordan/sail/readings/rubin.pdf), [documentação do bootstrap ponderado](https://ngreifer.github.io/fwb/reference/fwb.html). Estratificação municipal e preservação dos votos conhecidos são decisões deste projeto.

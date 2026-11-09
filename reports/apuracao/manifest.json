@@ -1,5 +1,5 @@
 {
-  "html_sha256": "19ea6af8bff558eefdc9fdd22c0c3f54b6785f884563fb2f2b0eb3553376c905",
+  "html_sha256": "0287c69b2b3d5efef6e7b15267b11ee8d61b6d0509eb3ca133416df004fb6bc4",
   "parquet_sha256": "795b5a1ac27eccdeb1388f4728264260ac5c00937f3f6dc1f8462e2e79f8c082",
   "source_code": {
     "/workspace/scripts/build_apuracao.py": "3de1f96a569b70f1a1f8714ae14f6f55278556e53f9c5cc65c976a10e77462a7",
@@ -7,7 +7,7 @@
     "src/projecao/timing.py": "67a0f958d7ba476e72234b895e8d50a7e5f748592a5416d742b7a5d4f3e14021",
     "src/projecao/study.py": "47739f6eed45fd12af2bcb1385246d7a4ded9841ad54e60c10939aa8d01e3c90",
     "configs/study.json": "630c1554865433d5002c3fbbe51fe5d399e82b1b504a25de92d980e1c68400bc",
-    "templates/apuracao.html": "44de6aa8ba80a487bb35d61517eff7e2a7cfe8a35ef91147c6ec767bc3f2a846"
+    "templates/apuracao.html": "4aafbce78d5541da984fa52b7f8e98a598c98c2e07d77193e1a376f4280084ea"
   },
   "series": {
     "2018": {

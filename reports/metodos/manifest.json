@@ -5,10 +5,10 @@
     "swing": 21,
     "hierarchical": 606
   },
-  "html_sha256": "9165555c6fe4ddfde35032fd684566ee29e1bae46c1494d3f1d80b904777e3cf",
+  "html_sha256": "05cd1557f6f584f46f010e764af970d9d698ed24aac6d91441e04e5c98b49713",
   "examples_sha256": "f93115e8b16f40114adbf425c5893ed44b5030455d32c1313bac203a87f63fda",
   "source_sha256": {
-    "templates/metodos.html": "b0f268749e220bf60587728105f8b359e41a0dc8f11786470154c9a76f992693",
+    "templates/metodos.html": "0ed2d4a1dc64f0d7b90eece349f344f3ac84e8220159314962204a11f5574eac",
     "scripts/build_metodos.py": "d922f91b37c6ed9ff60341b880271e2ce7eceebce670f4b13edc8a6e97e4296f",
     "src/projecao/didactic.py": "2f1649ceffc90016b490a98b65e2ecce839fa253fddf5ca4d1d5c0c265bcc4da",
     "src/projecao/models.py": "184cd9b0a369f04ef31559bfb0e5aeb098f0342486304b797e20e87996128b20",

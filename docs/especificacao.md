@@ -4,7 +4,7 @@
 > **Pergunta do trabalho:** quanto da apuração precisamos observar para que uma projeção se aproxime do resultado final e permaneça próxima dele?
 
 **Leitura rápida:** [visão geral](#1-visão-geral) · [dados](#2-de-onde-vêm-os-dados) · [métodos](#4-os-três-métodos) · [avaliação](#5-como-comparamos-os-resultados) · [estado atual](#7-o-que-já-está-pronto)  
-**Consulta técnica:** [metodologia vigente](metodologia.md) · [guia interativo dos métodos](../reports/metodos.html) · [dicionário dos dados e Parquets](dados.md) · [comandos de execução](../README.md) · [validação e armazenamento](../reports/validation.md)
+**Consulta técnica:** [metodologia vigente](metodologia.md) · [guia interativo dos métodos](../reports/metodos.html) · [dicionário dos dados e Parquets](dados.md) · [comandos de execução](../README.md) · [reprodução do experimento](../index.html#reproduzir)
 
 ## 1. Visão geral
 
@@ -318,7 +318,7 @@ Os valores são votos-equivalentes, pois os pesos do ajuste são contagens de vo
 
 ## 5. Como comparamos os resultados
 
-Os marcos curtos são **1%, 2%, 5%, 10% e 100% das seções do dataset**. A [primeira grade completa em CPU](../reports/cpu-study-20261107/analysis.md) já avaliou 1% a 100% em passos de 1 p.p., além de 0,1%, 0,2% e 0,5% no início. Os três métodos recebem os mesmos snapshots acumulados; 2% contém as seções do primeiro 1%.
+Os marcos curtos são **1%, 2%, 5%, 10% e 100% das seções do dataset**. A [primeira grade completa em CPU](../index.html#resultados) já avaliou 1% a 100% em passos de 1 p.p., além de 0,1%, 0,2% e 0,5% no início. Os três métodos recebem os mesmos snapshots acumulados; 2% contém as seções do primeiro 1%.
 
 | Medida | Definição | Unidade |
 |---|---|---|
@@ -396,7 +396,7 @@ A situação acima descreve os recursos já consultados. Ela não prova inexist�
 |---|---|
 | Testes automatizados | Suíte registrada em `reports/tests.log`; inclui escopo de três pleitos, exemplos numéricos, PDF e integridade da cronologia. |
 | CPU × CUDA sobre snapshot oficial de 2026 | Diferença zero na proporção de A dos três métodos no snapshot validado; referência no primeiro turno de 2026. Manifesto em `reports/runtime.json`. |
-| Execuções antigas | Configuração com segundo turno de eleições anteriores descartada; arquivos preservados e identificados em `reports/legacy-methodology.md`. |
+| Execuções antigas | Configuração com segundo turno de eleições anteriores descartada; arquivos preservados no acervo local fora do Git. |
 | Validações da referência correta | `reports/first-turn-reference-2018`, `-2022` e `-2026`: três métodos, cinco marcos, referência 1º turno → alvo 2º turno do mesmo ano. |
 | Primeira grade completa em CPU | 103 snapshots por método/ano, 927 projeções; cerca de 63 s e pico de 878 MiB de RSS, sem CUDA. Resultados em `reports/cpu-study-20261107`. |
 | Cronologia de 2018 | Primeira totalização por seção, preservando oito datas de 2019; os votos finais são revelados nesse relógio. |
@@ -414,7 +414,7 @@ Essas verificações demonstram funcionamento e consistência. Ainda não demons
 | Comparação científica | Comparar erro, convergência e estabilidade, separando histórico e simulado. |
 | Cobertura temporal | Descrever as diferenças entre os relógios de 2018 e 2022/2026; buscar outros anos apenas se o recorte for ampliado. |
 
-Para rodar o projeto, siga o [README](../README.md). Para consultar campos e abrir os Parquets, use o [dicionário dos dados](dados.md). O [relatório de validação](../reports/validation.md) preserva o inventário medido desta etapa.
+Para rodar o projeto, siga o [README](../README.md). Para consultar campos e abrir os Parquets, use o [dicionário dos dados](dados.md). A [página central](../index.html#reproduzir) reúne o recorte, as fontes e o caminho para repetir os experimentos.
 
 
 ## 9. Visualização das parciais oficiais
@@ -434,7 +434,7 @@ O eixo horizontal é sempre o **percentual de urnas/seções apuradas** e perman
 As curvas também estão em [`reports/apuracao/curves.parquet`](../reports/apuracao/curves.parquet). O [dicionário](dados.md#9-curvas-oficiais-curvesparquet) descreve seu esquema. O comando para regenerar a página está no [README](../README.md#6-regenerar-as-páginas).
 
 
-A [pesquisa de cronologia](pesquisa-cronologia.md) e a [minuta de solicitação ao TSE](solicitacao-dados-tse.md) ficam preservadas como registro da investigação. As lacunas territoriais de 2010/2014 não bloqueiam a metodologia vigente. As 333 parciais nacionais de 2014 e os pontos documentais de 2010 continuam no SSD, fora do HTML e da avaliação atual.
+A pesquisa de cronologia e a minuta de solicitação ao TSE ficam preservadas no acervo local fora do Git como registro da investigação. As lacunas territoriais de 2010/2014 não bloqueiam a metodologia vigente. As 333 parciais nacionais de 2014 e os pontos documentais de 2010 continuam no SSD, fora do HTML e da avaliação atual.
 
 ## 10. Guia interativo dos estimadores
 
