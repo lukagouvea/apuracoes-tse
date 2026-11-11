@@ -27,12 +27,12 @@
   },
   "source_code": {
     "/workspace/scripts/build_projecoes.py": "ddb08e0f25b1f638e515ed72f1ee43b2f8947791f6e17fb46cdcf997f91fa452",
-    "templates/projecoes.html": "bc1dff97861fd1ddb53140129e2a6228303b8e8f2582be189a02449414cfd5bd",
+    "templates/projecoes.html": "fabbb9964fb9a32938ad0dc784da962036258172805a81a24b66e73035db82da",
     "src/projecao/uncertainty.py": "0b2b2897588190b122613af8d3d27484422ff1d5f018efe366aeeb1beae1c98f",
     "src/projecao/models.py": "184cd9b0a369f04ef31559bfb0e5aeb098f0342486304b797e20e87996128b20"
   },
   "artifacts": {
-    "reports/projecoes.html": "55ce9e8545430e3131c1f169ae41f26bb3fdbbcd77128f6ceda6c826b019acd4",
+    "reports/projecoes.html": "cd009898bf4ee0c1e3d147a7d3a63459f79b1c0e75925c9dcac2b8cd6015df4e",
     "reports/projecoes/replicas.parquet": "9ba7ff7ed804a5048ffb521a9be025dc0d997d230754d322206d60adaa79ffc8",
     "reports/projecoes/cobertura.csv": "f49948554729cccba45dfe0a5337c6519a23c3f43d9b8136066c52b476480903",
     "reports/projecoes/series.json": "4cf9b004e34dd2dea027a414cfb72aefdf46b637e34eac6b4e96b2083ad91f22",
