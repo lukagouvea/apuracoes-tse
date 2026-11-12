@@ -9,6 +9,38 @@ METHODS=('poststrat','swing','hierarchical')
 MILESTONES=(.01,.02,.05,.1)
 
 
+SEGMENTS=((.01,.1),(.1,.3),(.3,1.))
+
+
+def trajectory_metrics(fractions, shares, final, start, end):
+    """Left-held recorded projections on [start,end); no invented forecasts."""
+    xs=list(fractions); ys=list(shares)
+    if (not xs or len(xs)!=len(ys) or
+        not all(math.isfinite(v) for v in [*xs,*ys,final,start,end]) or
+        any(b<=a for a,b in zip(xs,xs[1:])) or
+        not 0<=start<end<=1 or any(not 0<x<=1 for x in xs) or
+        any(not 0<=y<=1 for y in [*ys,final]) or xs[-1]<end):
+        raise ValueError('Invalid or uncovered trajectory')
+    result={'start_fraction':start,'end_fraction':end,'available':xs[0]<=start,
+            'convention':'last_observed_projection_on_half_open_interval'}
+    if not result['available']: return result
+    area=0.; durations={str(t):0. for t in (1.,.5,.25)}
+    active=[]
+    for i in range(len(xs)-1):
+        width=min(end,xs[i+1])-max(start,xs[i])
+        if width<=0: continue
+        share=ys[i]; error=100*abs(share-final)
+        area+=width*error; active.append(share)
+        for threshold in durations:
+            if error<=float(threshold)+1e-12: durations[threshold]+=width
+    result.update(error_area_pp_fraction=area,mean_absolute_error_pp=area/(end-start),
+        within_fraction={t:w/(end-start) for t,w in durations.items()},
+        max_error_pp=max(100*abs(y-final) for y in active),
+        total_variation_pp=100*sum(abs(b-a) for a,b in zip(active,active[1:])),
+        amplitude_pp=100*(max(active)-min(active)))
+    return result
+
+
 def prepare_election(frame,metadata):
     """Validate a recorded run and expose its actual snapshots without interpolation."""
     year=metadata['year']
@@ -75,4 +107,6 @@ def prepare_election(frame,metadata):
         'clock':'Primeira totalização por seção' if chrono.get('reconstructed_from_final_votes') else 'Recebimento de BUs',
         'reconstructed':bool(chrono.get('reconstructed_from_final_votes')),
         'convergence':{method:{str(e):convergence(fractions,g.error_pp.to_list(),e) for e in [1.,.5,.25]} for method,g in groups.items()},
+        'trajectory_metrics':{method:[trajectory_metrics(fractions,g.share_a.to_list(),final,a,b)
+            for a,b in SEGMENTS] for method,g in groups.items()},
         'parameters':metadata.get('defaults',{})}

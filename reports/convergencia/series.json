@@ -3343,6 +3343,158 @@
           "0.25": 0.8007428792733162
         }
       },
+      "trajectory_metrics": {
+        "poststrat": [
+          {
+            "start_fraction": 0.01,
+            "end_fraction": 0.1,
+            "available": true,
+            "convention": "last_observed_projection_on_half_open_interval",
+            "error_area_pp_fraction": 0.04153631853818227,
+            "mean_absolute_error_pp": 0.46151465042424744,
+            "within_fraction": {
+              "1.0": 0.9496453817476245,
+              "0.5": 0.624366753120758,
+              "0.25": 0.32451579840940126
+            },
+            "max_error_pp": 1.7394271295478991,
+            "total_variation_pp": 3.2225518288215627,
+            "amplitude_pp": 1.815562437649676
+          },
+          {
+            "start_fraction": 0.1,
+            "end_fraction": 0.3,
+            "available": true,
+            "convention": "last_observed_projection_on_half_open_interval",
+            "error_area_pp_fraction": 0.20262300367590597,
+            "mean_absolute_error_pp": 1.0131150183795299,
+            "within_fraction": {
+              "1.0": 0.35192365243108126,
+              "0.5": 0.10051975143470762,
+              "0.25": 0.05050302784917083
+            },
+            "max_error_pp": 1.39281042277693,
+            "total_variation_pp": 2.2269000702223707,
+            "amplitude_pp": 1.3166751146751532
+          },
+          {
+            "start_fraction": 0.3,
+            "end_fraction": 1.0,
+            "available": true,
+            "convention": "last_observed_projection_on_half_open_interval",
+            "error_area_pp_fraction": 0.39945793749334657,
+            "mean_absolute_error_pp": 0.5706541964190666,
+            "within_fraction": {
+              "1.0": 0.8543143078447448,
+              "0.5": 0.514017633952148,
+              "0.25": 0.1704108217944784
+            },
+            "max_error_pp": 1.3345806366519497,
+            "total_variation_pp": 2.319797181288663,
+            "amplitude_pp": 1.2941663560965044
+          }
+        ],
+        "swing": [
+          {
+            "start_fraction": 0.01,
+            "end_fraction": 0.1,
+            "available": true,
+            "convention": "last_observed_projection_on_half_open_interval",
+            "error_area_pp_fraction": 0.045618414346564745,
+            "mean_absolute_error_pp": 0.506871270517386,
+            "within_fraction": {
+              "1.0": 1.0,
+              "0.5": 0.5039452014067372,
+              "0.25": 0.05035461825237553
+            },
+            "max_error_pp": 0.7153926781902353,
+            "total_variation_pp": 2.0419401599438003,
+            "amplitude_pp": 1.2969913497173469
+          },
+          {
+            "start_fraction": 0.1,
+            "end_fraction": 0.3,
+            "available": true,
+            "convention": "last_observed_projection_on_half_open_interval",
+            "error_area_pp_fraction": 0.1786395007831194,
+            "mean_absolute_error_pp": 0.8931975039155972,
+            "within_fraction": {
+              "1.0": 0.9521617434778016,
+              "0.5": 0.0,
+              "0.25": 0.0
+            },
+            "max_error_pp": 1.00907316257563,
+            "total_variation_pp": 1.4345337230329436,
+            "amplitude_pp": 0.4441782357844204
+          },
+          {
+            "start_fraction": 0.3,
+            "end_fraction": 1.0,
+            "available": true,
+            "convention": "last_observed_projection_on_half_open_interval",
+            "error_area_pp_fraction": 0.2317231631384907,
+            "mean_absolute_error_pp": 0.3310330901978439,
+            "within_fraction": {
+              "1.0": 1.0,
+              "0.5": 0.7207865366334542,
+              "0.25": 0.5280912227581593
+            },
+            "max_error_pp": 0.9090374879945518,
+            "total_variation_pp": 1.7035514955327014,
+            "amplitude_pp": 0.9186546028204623
+          }
+        ],
+        "hierarchical": [
+          {
+            "start_fraction": 0.01,
+            "end_fraction": 0.1,
+            "available": true,
+            "convention": "last_observed_projection_on_half_open_interval",
+            "error_area_pp_fraction": 0.03328872453919035,
+            "mean_absolute_error_pp": 0.36987471710211495,
+            "within_fraction": {
+              "1.0": 1.0,
+              "0.5": 0.6096167462748457,
+              "0.25": 0.5592621280224702
+            },
+            "max_error_pp": 0.7496783285602715,
+            "total_variation_pp": 1.6092792593908556,
+            "amplitude_pp": 1.3874505003968918
+          },
+          {
+            "start_fraction": 0.1,
+            "end_fraction": 0.3,
+            "available": true,
+            "convention": "last_observed_projection_on_half_open_interval",
+            "error_area_pp_fraction": 0.18492223893779766,
+            "mean_absolute_error_pp": 0.9246111946889883,
+            "within_fraction": {
+              "1.0": 0.9062268950462979,
+              "0.5": 0.0,
+              "0.25": 0.0
+            },
+            "max_error_pp": 1.0212520316038365,
+            "total_variation_pp": 1.0538557783248026,
+            "amplitude_pp": 0.34057637106537086
+          },
+          {
+            "start_fraction": 0.3,
+            "end_fraction": 1.0,
+            "available": true,
+            "convention": "last_observed_projection_on_half_open_interval",
+            "error_area_pp_fraction": 0.274719900528338,
+            "mean_absolute_error_pp": 0.3924570007547686,
+            "within_fraction": {
+              "1.0": 1.0,
+              "0.5": 0.6713670839599439,
+              "0.25": 0.3122029363095448
+            },
+            "max_error_pp": 0.8724587001472439,
+            "total_variation_pp": 1.2971281823813463,
+            "amplitude_pp": 0.8585051908277297
+          }
+        ]
+      },
       "parameters": {
         "method": "poststrat",
         "device": "cpu",
@@ -6665,6 +6817,158 @@
           "0.25": 0.7100447431084597
         }
       },
+      "trajectory_metrics": {
+        "poststrat": [
+          {
+            "start_fraction": 0.01,
+            "end_fraction": 0.1,
+            "available": true,
+            "convention": "last_observed_projection_on_half_open_interval",
+            "error_area_pp_fraction": 0.03995328666613504,
+            "mean_absolute_error_pp": 0.4439254074015004,
+            "within_fraction": {
+              "1.0": 0.7791326879855527,
+              "0.5": 0.7791326879855527,
+              "0.25": 0.5553060411670493
+            },
+            "max_error_pp": 1.5220262857757239,
+            "total_variation_pp": 3.4386084213019363,
+            "amplitude_pp": 1.9286286599644153
+          },
+          {
+            "start_fraction": 0.1,
+            "end_fraction": 0.3,
+            "available": true,
+            "convention": "last_observed_projection_on_half_open_interval",
+            "error_area_pp_fraction": 0.051209700622547635,
+            "mean_absolute_error_pp": 0.2560485031127382,
+            "within_fraction": {
+              "1.0": 1.0,
+              "0.5": 0.8511062903048124,
+              "0.25": 0.5003431999796623
+            },
+            "max_error_pp": 0.6657927185999668,
+            "total_variation_pp": 1.4567409085551541,
+            "amplitude_pp": 0.9459900273838473
+          },
+          {
+            "start_fraction": 0.3,
+            "end_fraction": 1.0,
+            "available": true,
+            "convention": "last_observed_projection_on_half_open_interval",
+            "error_area_pp_fraction": 0.29360637223483677,
+            "mean_absolute_error_pp": 0.4194376746211954,
+            "within_fraction": {
+              "1.0": 1.0000000000000002,
+              "0.5": 0.5283736194826215,
+              "0.25": 0.2999700986261105
+            },
+            "max_error_pp": 0.7035508630753529,
+            "total_variation_pp": 0.9759262209155573,
+            "amplitude_pp": 0.6829850177649699
+          }
+        ],
+        "swing": [
+          {
+            "start_fraction": 0.01,
+            "end_fraction": 0.1,
+            "available": true,
+            "convention": "last_observed_projection_on_half_open_interval",
+            "error_area_pp_fraction": 0.017549541604973063,
+            "mean_absolute_error_pp": 0.1949949067219229,
+            "within_fraction": {
+              "1.0": 0.9999999999999999,
+              "0.5": 0.9999999999999999,
+              "0.25": 0.779490482203033
+            },
+            "max_error_pp": 0.3079688932152602,
+            "total_variation_pp": 0.9944267819915864,
+            "amplitude_pp": 0.5551752762781526
+          },
+          {
+            "start_fraction": 0.1,
+            "end_fraction": 0.3,
+            "available": true,
+            "convention": "last_observed_projection_on_half_open_interval",
+            "error_area_pp_fraction": 0.08880762097565448,
+            "mean_absolute_error_pp": 0.44403810487827244,
+            "within_fraction": {
+              "1.0": 1.0,
+              "0.5": 0.9503059140559458,
+              "0.25": 0.0
+            },
+            "max_error_pp": 0.5003320472617978,
+            "total_variation_pp": 0.2309523894187704,
+            "amplitude_pp": 0.1923631540465376
+          },
+          {
+            "start_fraction": 0.3,
+            "end_fraction": 1.0,
+            "available": true,
+            "convention": "last_observed_projection_on_half_open_interval",
+            "error_area_pp_fraction": 0.17323964620234644,
+            "mean_absolute_error_pp": 0.24748520886049494,
+            "within_fraction": {
+              "1.0": 1.0000000000000002,
+              "0.5": 0.9997379090102404,
+              "0.25": 0.5142098107981489
+            },
+            "max_error_pp": 0.5003320472617978,
+            "total_variation_pp": 0.5216249252694038,
+            "amplitude_pp": 0.4919529956185609
+          }
+        ],
+        "hierarchical": [
+          {
+            "start_fraction": 0.01,
+            "end_fraction": 0.1,
+            "available": true,
+            "convention": "last_observed_projection_on_half_open_interval",
+            "error_area_pp_fraction": 0.02636708662816382,
+            "mean_absolute_error_pp": 0.2929676292018202,
+            "within_fraction": {
+              "1.0": 0.9999999999999999,
+              "0.5": 0.9999999999999999,
+              "0.25": 0.22382664681850326
+            },
+            "max_error_pp": 0.45965446115779907,
+            "total_variation_pp": 1.4509787168767496,
+            "amplitude_pp": 0.8175358486634976
+          },
+          {
+            "start_fraction": 0.1,
+            "end_fraction": 0.3,
+            "available": true,
+            "convention": "last_observed_projection_on_half_open_interval",
+            "error_area_pp_fraction": 0.09763562498269578,
+            "mean_absolute_error_pp": 0.4881781249134789,
+            "within_fraction": {
+              "1.0": 1.0,
+              "0.5": 0.7001088918453992,
+              "0.25": 0.0
+            },
+            "max_error_pp": 0.5819092850681384,
+            "total_variation_pp": 0.5036446500420899,
+            "amplitude_pp": 0.25035849231194174
+          },
+          {
+            "start_fraction": 0.3,
+            "end_fraction": 1.0,
+            "available": true,
+            "convention": "last_observed_projection_on_half_open_interval",
+            "error_area_pp_fraction": 0.2029510843293987,
+            "mean_absolute_error_pp": 0.2899301204705696,
+            "within_fraction": {
+              "1.0": 1.0000000000000002,
+              "0.5": 0.8143342586214619,
+              "0.25": 0.41422179555934335
+            },
+            "max_error_pp": 0.5819092850681384,
+            "total_variation_pp": 0.6354522856841238,
+            "amplitude_pp": 0.5734263864433431
+          }
+        ]
+      },
       "parameters": {
         "method": "poststrat",
         "device": "cpu",
@@ -9986,6 +10290,158 @@
           "0.5": 0.3900822307468875,
           "0.25": 0.4704420027844272
         }
+      },
+      "trajectory_metrics": {
+        "poststrat": [
+          {
+            "start_fraction": 0.01,
+            "end_fraction": 0.1,
+            "available": true,
+            "convention": "last_observed_projection_on_half_open_interval",
+            "error_area_pp_fraction": 0.07717263597839158,
+            "mean_absolute_error_pp": 0.8574737330932397,
+            "within_fraction": {
+              "1.0": 0.4483339621108673,
+              "0.5": 0.340473575206801,
+              "0.25": 0.22769536896999557
+            },
+            "max_error_pp": 1.7721260156134955,
+            "total_variation_pp": 4.46584866274854,
+            "amplitude_pp": 2.4038126190944364
+          },
+          {
+            "start_fraction": 0.1,
+            "end_fraction": 0.3,
+            "available": true,
+            "convention": "last_observed_projection_on_half_open_interval",
+            "error_area_pp_fraction": 0.18067857238575985,
+            "mean_absolute_error_pp": 0.9033928619287993,
+            "within_fraction": {
+              "1.0": 0.4991987259742991,
+              "0.5": 0.24820965334882458,
+              "0.25": 0.0
+            },
+            "max_error_pp": 1.296616180208976,
+            "total_variation_pp": 1.7734753236537504,
+            "amplitude_pp": 0.9587705311288053
+          },
+          {
+            "start_fraction": 0.3,
+            "end_fraction": 1.0,
+            "available": true,
+            "convention": "last_observed_projection_on_half_open_interval",
+            "error_area_pp_fraction": 0.07588962332031314,
+            "mean_absolute_error_pp": 0.10841374760044735,
+            "within_fraction": {
+              "1.0": 1.0,
+              "0.5": 1.0,
+              "0.25": 0.885456447179587
+            },
+            "max_error_pp": 0.4273033069946308,
+            "total_variation_pp": 1.4433660943632742,
+            "amplitude_pp": 0.5161174333264462
+          }
+        ],
+        "swing": [
+          {
+            "start_fraction": 0.01,
+            "end_fraction": 0.1,
+            "available": true,
+            "convention": "last_observed_projection_on_half_open_interval",
+            "error_area_pp_fraction": 0.022772435170987714,
+            "mean_absolute_error_pp": 0.25302705745541904,
+            "within_fraction": {
+              "1.0": 1.0,
+              "0.5": 0.8948995569622364,
+              "0.25": 0.5516660378891326
+            },
+            "max_error_pp": 0.5414551836493975,
+            "total_variation_pp": 0.8143740914464792,
+            "amplitude_pp": 0.6087986156823599
+          },
+          {
+            "start_fraction": 0.1,
+            "end_fraction": 0.3,
+            "available": true,
+            "convention": "last_observed_projection_on_half_open_interval",
+            "error_area_pp_fraction": 0.06698792063393068,
+            "mean_absolute_error_pp": 0.33493960316965343,
+            "within_fraction": {
+              "1.0": 1.0,
+              "0.5": 1.0,
+              "0.25": 0.20109474063761376
+            },
+            "max_error_pp": 0.42536859514729075,
+            "total_variation_pp": 0.3662304424565943,
+            "amplitude_pp": 0.3580251631143283
+          },
+          {
+            "start_fraction": 0.3,
+            "end_fraction": 1.0,
+            "available": true,
+            "convention": "last_observed_projection_on_half_open_interval",
+            "error_area_pp_fraction": 0.13829247201881417,
+            "mean_absolute_error_pp": 0.1975606743125917,
+            "within_fraction": {
+              "1.0": 1.0,
+              "0.5": 1.0,
+              "0.25": 0.5995532897306718
+            },
+            "max_error_pp": 0.42536859514729075,
+            "total_variation_pp": 0.4676014882672552,
+            "amplitude_pp": 0.4336480018429123
+          }
+        ],
+        "hierarchical": [
+          {
+            "start_fraction": 0.01,
+            "end_fraction": 0.1,
+            "available": true,
+            "convention": "last_observed_projection_on_half_open_interval",
+            "error_area_pp_fraction": 0.032908833205791924,
+            "mean_absolute_error_pp": 0.3656537022865769,
+            "within_fraction": {
+              "1.0": 1.0,
+              "0.5": 0.6661591931170561,
+              "0.25": 0.33049214918386904
+            },
+            "max_error_pp": 0.6907203866475364,
+            "total_variation_pp": 1.0160201147310643,
+            "amplitude_pp": 0.9009404686453948
+          },
+          {
+            "start_fraction": 0.1,
+            "end_fraction": 0.3,
+            "available": true,
+            "convention": "last_observed_projection_on_half_open_interval",
+            "error_area_pp_fraction": 0.11546397027118349,
+            "mean_absolute_error_pp": 0.5773198513559175,
+            "within_fraction": {
+              "1.0": 1.0,
+              "0.5": 0.30162458308710854,
+              "0.25": 0.0001852946184432991
+            },
+            "max_error_pp": 0.7043110093453375,
+            "total_variation_pp": 0.6670907921391578,
+            "amplitude_pp": 0.49409092734747917
+          },
+          {
+            "start_fraction": 0.3,
+            "end_fraction": 1.0,
+            "available": true,
+            "convention": "last_observed_projection_on_half_open_interval",
+            "error_area_pp_fraction": 0.11566138937183118,
+            "mean_absolute_error_pp": 0.16523055624547311,
+            "within_fraction": {
+              "1.0": 1.0,
+              "0.5": 0.8713110989330178,
+              "0.25": 0.7565114245936754
+            },
+            "max_error_pp": 0.6091575402153215,
+            "total_variation_pp": 0.7688331079587329,
+            "amplitude_pp": 0.6444193666626741
+          }
+        ]
       },
       "parameters": {
         "method": "poststrat",

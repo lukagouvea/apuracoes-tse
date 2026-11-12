@@ -65,7 +65,26 @@ const pct=v=>new Intl.NumberFormat('pt-BR',{minimumFractionDigits:2,maximumFract
  }
  await page.setViewportSize({width:390,height:844});await page.evaluate(()=>window.scrollTo(0,0));await page.screenshot({path:'reports/previews/convergencia-mobile.png',fullPage:true});
  await page.reload();await page.waitForSelector('#detail-chart path');assert.match(await page.locator('#year-title').textContent(),/2026/);
+ {
+ const dataset=JSON.parse(fs.readFileSync('reports/convergencia/series.json','utf8'));
+ for(const year of [2018,2022,2026]){
+  await page.locator('#years [data-year="'+year+'"]').click();
+  assert.match(await page.locator('#trajectory-context').textContent(),new RegExp(String(year)));
+  assert.equal(await page.locator('#trajectory-body tr').count(),9);
+  const records=[];for(let i=0;i<3;i++)for(const method of ['poststrat','swing','hierarchical'])records.push(dataset.elections[year].trajectory_metrics[method][i]);
+  for(let i=0;i<records.length;i++){
+   const r=records[i],cells=await page.locator('#trajectory-body tr').nth(i).locator('td').allTextContents();
+   assert.equal(r.available,true);
+   const values=[r.mean_absolute_error_pp,...['1.0','0.5','0.25'].map(t=>100*r.within_fraction[t]),r.max_error_pp,r.total_variation_pp,r.amplitude_pp];
+   assert.deepEqual(cells.slice(1),values.map(v=>new Intl.NumberFormat('pt-BR',{minimumFractionDigits:2,maximumFractionDigits:2}).format(v)));
+  }
+ }
+ const pending=page.waitForEvent('download');await page.locator('#download-trajectory').click();const downloaded=await pending;
+ const target='reports/convergencia/previews/metricas.csv';await downloaded.saveAs(target);
+ const lines=fs.readFileSync(target,'utf8').trim().split('\n');assert.equal(lines.length,28);
+ assert.ok(lines[0].includes('error_area_pp_fraction'));assert.ok(lines[0].includes('total_variation_pp'));
+ }
  assert.deepEqual(errors,[]);assert.deepEqual(requests,[]);
- console.log('Painel: 3 anos, 3 métricas, 3 recortes, 36 registros nos marcos, limiares, baseline, slider/teclado, reprodução, CSV/SVG, recarga e telas 320–1440px; offline e sem erros JavaScript.');
+ console.log('Painel: 3 anos, 3 métricas, 3 recortes, 36 registros nos marcos, 27 métricas por trecho/CSV, limiares, baseline, slider/teclado, reprodução, CSV/SVG, recarga e telas 320–1440px; offline e sem erros JavaScript.');
  }finally{await browser.close();}
 })().catch(e=>{console.error(e);process.exit(1);});

@@ -137,3 +137,24 @@ Para cada snapshot, 200 réplicas recebem pesos exponenciais por seção observa
 A [base estatística](https://ngreifer.github.io/fwb/reference/fwb.html) é o bootstrap ponderado; a estratificação municipal e a separação entre ajuste e votos conhecidos são escolhas desta implementação. Não se trata de uma reprodução do modelo de incerteza do Mattecca.
 
 **A cobertura eleitoral não está calibrada e foi baixa na avaliação retrospectiva.** As seções observadas não são uma amostra aleatória da eleição; a reamostragem não representa o erro sistemático dessa seleção nem perfis inteiramente ausentes. Municípios com uma única seção observada têm distribuição empírica local degenerada. Não se interpreta a massa de 90% entre quantis como 90% de chance de conter o resultado real, nem os intervalos como banda simultânea ou probabilidade de vitória. A cobertura retrospectiva por ano/método fica registrada sem alterar os limites; os snapshots dependentes não equivalem a eleições independentes.
+
+## Avaliação complementar da trajetória
+
+A convergência sustentada permanece como critério de entrada definitiva nas tolerâncias de 1,0, 0,5 e 0,25 p.p. A avaliação complementar considera os trechos [1%,10%), [10%,30%) e [30%,100%) do percentual efetivo de seções apuradas.
+
+Para uma fração apurada x, define-se P(x) como a última projeção registrada em um snapshot com fração menor ou igual a x. Não há interpolação linear nem extrapolação antes da primeira projeção. Se a grade não cobre o início, o trecho é indisponível. A convenção por degraus descreve a projeção disponível entre atualizações registradas; não reconstrói estimativas que não foram calculadas.
+
+Se p é o resultado final, e(x) = 100 |P(x) − p| é o erro em p.p. Para o trecho [a,b):
+
+- **Área do erro absoluto:** A = ∫[a,b) e(x) dx, em p.p. × fração de apuração.
+- **Erro integrado médio:** A / (b − a), em p.p.
+- **Permanência na faixa ε:** ∫[a,b) 1[e(x) ≤ ε] dx / (b − a). O painel apresenta esse valor em percentual do trecho para ε = 1,0; 0,5; 0,25 p.p.
+- **Erro máximo:** maior e(x) vigente no trecho.
+- **Variação total:** soma dos módulos dos saltos de P estritamente dentro do trecho, multiplicada por 100.
+- **Amplitude:** 100 × (máximo P − mínimo P) entre os valores vigentes no trecho.
+
+Os cálculos usam as larguras efetivas dos intervalos entre snapshots, recortadas pelos limites a e b. Snapshots concentrados no início não recebem peso desproporcional. O salto no início é excluído da variação: o valor inicial é a condição de partida. O valor após uma atualização no limite final torna-se a condição inicial do trecho seguinte, mas o salto nesse limite não entra na variação total de nenhum dos trechos. O endpoint de 100%, que reproduz o observado por construção, não entra nessas integrais nem na estabilidade.
+
+Precisão, permanência e estabilidade são apresentadas separadamente. Uma projeção constante pode ter variação e amplitude zero e erro elevado. A variação total depende da resolução da grade; os trechos têm comprimentos diferentes. Essas medidas não substituem a convergência sustentada nem constituem probabilidades ou intervalos de confiança.
+
+Os resultados ficam em `reports/convergencia/series.json`, em `elections.<ano>.trajectory_metrics.<metodo>`, e no HTML, com exportação CSV dos 27 registros (três trechos × três métodos × três anos). A implementação está em `projecao.results.trajectory_metrics`. Não há reajuste de modelos nesta etapa.

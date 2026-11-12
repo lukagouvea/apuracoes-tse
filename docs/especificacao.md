@@ -461,3 +461,6 @@ A tooltip das projeções mostra o candidato, modelo/ano, projeção, parcial e 
 As faixas vêm de 200 refits por snapshot, com pesos exponenciais normalizados nas seções observadas de cada município. Os votos conhecidos ficam fixos no total; só as estimativas pendentes variam. O resultado final entra depois, na avaliação de cobertura, e o bootstrap não recebe votos pendentes.
 
 **Estado experimental:** a cobertura do final foi baixa. Esse bootstrap condicional não cobre o viés da ordem de chegada e a incerteza específica de localidades sem observações. O painel exibe a contagem correspondente ao modelo selecionado; os quantis não são apresentados como margem calibrada de acerto eleitoral. Os esquemas estão no [dicionário](dados.md#13-faixas-de-reamostragem-reportsprojecoes).
+
+
+A avaliação por trechos de 1–10%, 10–30% e 30–100% inclui erro integrado médio, permanência nas tolerâncias e estabilidade (variação total e amplitude). As definições e a convenção por degraus estão na [metodologia](metodologia.md#avaliação-complementar-da-trajetória). Os 27 registros ficam em `reports/convergencia/series.json`, na chave `elections.<ano>.trajectory_metrics.<metodo>`, com exportação CSV no painel.

@@ -17,7 +17,7 @@ Abra [index.html](index.html), a página central do experimento, com acesso aos 
 | Página | Conteúdo |
 |---|---|
 | [Projeções com faixa sombreada](reports/projecoes.html) | Parcial, projeção e faixa experimental; hover/toque, três anos/modelos e exportação CSV/SVG. |
-| [Convergência e estabilidade](reports/convergencia.html) | Trajetórias, erros, oscilações e tabela de 1%, 2%, 5% e 10%. |
+| [Convergência e estabilidade](reports/convergencia.html) | Trajetórias, erros, oscilações, marcos de 1%, 2%, 5% e 10% e métricas por trecho (erro integrado, permanência e estabilidade). |
 | [Apuração dos candidatos](reports/apuracao.html) | Parciais de votação; eixo X sempre em percentual de seções. |
 | [Guia dos métodos](reports/metodos.html) | Exemplos fictícios interativos e contas dos três estimadores. |
 
